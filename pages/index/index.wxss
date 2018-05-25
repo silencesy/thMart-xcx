@@ -1,0 +1,55 @@
+/**index.wxss**/
+
+/* 轮播 */
+.home-swiper {
+  height: 410rpx;
+}
+.home-swiper image {
+  width: 100%;
+}
+/* 区块 */
+.section {
+  margin-top: 10px;
+}
+.section .section-banner {
+  width: 100%;
+  height: 150rpx;
+}
+
+
+.section .product-scroll {
+  display: flex;
+  white-space: nowrap;
+}
+.section .product-scroll .product-item {
+  display: inline-block;
+  width:200rpx;
+  height: 200rpx;
+  margin-left: 20rpx;
+}
+.section .product-scroll .product-item:last-child {
+  margin-right: 20rpx;
+}
+
+.product-box {
+  padding-top: 10rpx;
+}
+
+.product-box .product-item image {
+  width: 100%;
+  height: 100%;
+}
+
+.product-box .product-item .product-name {
+  width: 100%;
+  text-align: center;
+  font-size: 22rpx;
+  color: #444;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+

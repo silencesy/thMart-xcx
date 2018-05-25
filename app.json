@@ -1,0 +1,54 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/categories/categories",
+    "pages/guide/guide",
+    "pages/cart/cart",
+    "pages/center/center"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "backgroundColor": "#E8E8E8",
+    "navigationBarBackgroundColor": "#f6442b",
+    "navigationBarTitleText": "thMart",
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh": true,
+    "onReachBottomDistance": "50px"
+  },
+  "tabBar": {
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "color": "#919191",
+    "selectedColor": "#f6442b",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "Home",
+      "iconPath": "images/home.png",
+      "selectedIconPath": "images/home-cover.png"
+    },
+    {
+      "pagePath": "pages/categories/categories",
+      "text": "Categories",
+      "iconPath": "images/category.png",
+      "selectedIconPath": "images/category-cover.png"
+    },
+    {
+      "pagePath": "pages/guide/guide",
+      "text": "Guide",
+      "iconPath": "images/gudie.png",
+      "selectedIconPath": "images/gudie-cover.png"
+    },
+    {
+      "pagePath": "pages/cart/cart",
+      "text": "Cart",
+      "iconPath": "images/cart.png",
+      "selectedIconPath": "images/cart-cover.png"
+    },
+    {
+      "pagePath": "pages/center/center",
+      "text": "My Account",
+      "iconPath": "images/me.png",
+      "selectedIconPath": "images/me-cover.png"
+    }]
+  }
+}
