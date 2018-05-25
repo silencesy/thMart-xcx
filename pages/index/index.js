@@ -4,6 +4,12 @@ const app = getApp()
 Page({
   data: {
     homeData: {},
+    hotDataPara: {
+      set_position: 12,
+      pageSize: 9,
+      p: 0
+    },
+    hotData: [],
     swiperConfig: {
       indicatorDots: true,
       indicatorColor: "#ccc",
@@ -18,13 +24,14 @@ Page({
   },
   //事件处理函数
   onLoad: function () {
+    var that = this;
+    that.data.hotDataPara.p++;
     wx.showToast({
       title: 'loading',
       icon: 'loading',
       duration: 1000,
       mask: true
     })
-    var that = this;
     wx.request({
       url: 'http://api.mall.thatsmags.com/Api/Public/home',
       success: function (res) {
@@ -33,13 +40,31 @@ Page({
           homeData: res.data.data
         });
       }
-    }) 
+    });
+    wx.request({
+      url: 'http://api.mall.thatsmags.com/Api/Set/getList',
+      data: that.data.hotDataPara,
+      success: function (res) {
+        that.setData({
+          hotData: that.data.hotData.concat(res.data.data.goods)
+        });
+      }
+    });
   },
   onPullDownRefresh: function () {
     
   },
   onReachBottom: function () {
-    
+    var that = this;
+    that.data.hotDataPara.p++;
+    wx.request({
+      url: 'http://api.mall.thatsmags.com/Api/Set/getList',
+      data: that.data.hotDataPara,
+      success: function (res) {
+        that.setData({
+          hotData: that.data.hotData.concat(res.data.data.goods)
+        });
+      }
+    });
   },
-  
 })
