@@ -7,4 +7,11 @@
   justify-content: space-between;
   padding: 200rpx 0;
   box-sizing: border-box;
-} 
+}
+.theme_color {
+  color: #f24827;
+}
+view {
+  font-size:24rpx;
+  color: #444;
+}

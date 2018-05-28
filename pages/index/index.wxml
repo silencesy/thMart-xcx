@@ -9,12 +9,16 @@
 </swiper>
 <view class='section'>
     <image class='section-banner' lazy-load="true" src='{{homeData.deal.image}}'></image>
-    <view class='product-box'>
+    <view class='product-container'>
         <scroll-view class='product-scroll' scroll-x="true">
           <block wx:for="{{homeData.deal.list}}" wx:key="*this">
             <view class='product-item' product-item="{{item.id}}">
               <image src='{{item.coverpic}}'></image>
-              <text class='product-name'>{{item.goods_name}}</text>
+              <view class='product-name'>{{item.goods_name}}</view>
+              <view style='display:flex;'>
+                <view class='product-price'>{{item.goods_price}}</view>
+                <view class='product-price'>{{item.goods_price}}</view>
+              </view>
             </view>
           </block>
         </scroll-view>
@@ -22,25 +26,36 @@
 </view>
 <view class='section'>
     <image class='section-banner' lazy-load="true" src='{{homeData.ticketing.image}}'></image>
-    <view class='product-box'>
+    <view class='product-container'>
         <scroll-view class='product-scroll' scroll-x="true">
           <block wx:for="{{homeData.ticketing.list}}" wx:key="*this">
             <view class='product-item' product-item="{{item.id}}">
               <image src='{{item.coverpic}}'></image>
-              <text class='product-name'>{{item.goods_name}}</text>
+              <view class='product-name'>{{item.goods_name}}</view>
+              <view style='display:flex;'>
+                <view class='product-price'>{{item.goods_price}}</view>
+                <view class='product-price'>{{item.goods_price}}</view>
+              </view>
             </view>
           </block>
         </scroll-view>
     </view>
 </view>
+<article-item>
+  <image src='http://api.mall.thatsmags.com/Public/ckfinder/images/banner/floor/3Editor.png'></image>
+</article-item>
 <view class='section'>
     <image class='section-banner' lazy-load="true" src='{{homeData.feature_products.image}}'></image>
-    <view class='product-box'>
+    <view class='product-container'>
         <scroll-view class='product-scroll' scroll-x="true">
           <block wx:for="{{homeData.feature_products.list}}" wx:key="*this">
             <view class='product-item' product-item="{{item.id}}">
               <image src='{{item.coverpic}}'></image>
-              <text class='product-name'>{{item.goods_name}}</text>
+              <view class='product-name'>{{item.goods_name}}</view>
+              <view style='display:flex;'>
+                <view class='product-price'>{{item.goods_price}}</view>
+                <view class='product-price'>{{item.goods_price}}</view>
+              </view>
             </view>
           </block>
         </scroll-view>
@@ -48,12 +63,12 @@
 </view>
 <view class='section'>
     <image class='section-banner' lazy-load="true" src='{{homeData.feature_shop.image}}'></image>
-    <view class='product-box'>
+    <view class='product-container'>
         <scroll-view class='product-scroll' scroll-x="true">
           <block wx:for="{{homeData.feature_shop.list}}" wx:key="*this">
             <view class='product-item' product-item="{{item.id}}">
               <image src='{{item.coverpic}}'></image>
-              <text class='product-name'>{{item.merchant_name}}</text>
+              <view class='product-name'>{{item.merchant_name}}</view>
             </view>
           </block>
         </scroll-view>
@@ -61,6 +76,21 @@
 </view>
 <view class='section'>
   <image class='section-banner' lazy-load="true" src='{{homeData.hot_products.image}}'></image>
+  <view class='hot-product-container'>
+    <view class='product-item' wx:for="{{hotData}}" wx:key="*this">
+      <view class='imgbox'>
+        <image src="{{item.coverpic}}"></image>
+      </view>
+      <view class='product-info'>
+        <view class='product-name'>{{item.goods_name}}</view>
+        <view style='display:flex;'>
+          <view class='product-price'>{{item.goods_price}}</view>
+          <view class='product-price'>{{item.goods_price}}</view>
+        </view>
+        
+      </view>
+    </view>
+  </view>
 </view>
 
 

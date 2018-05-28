@@ -1,0 +1,27 @@
+.article-container {
+  width: 100%;
+}
+.article-container > image {
+  width:100%;
+  height:150rpx;
+}
+
+
+.article-box {
+  display: flex;
+}
+.imgbox {
+  flex: 3;
+  padding: 15rpx;
+}
+.imgbox image {
+  width: 100%;
+  height: 100%;
+}
+.info {
+  flex: 5;
+  padding-right: 15rpx;
+}
+.info .data {
+  text-align: right;
+}

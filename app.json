@@ -12,7 +12,6 @@
     "navigationBarBackgroundColor": "#f6442b",
     "navigationBarTitleText": "thMart",
     "navigationBarTextStyle":"white",
-    "enablePullDownRefresh": true,
     "onReachBottomDistance": "50px"
   },
   "tabBar": {
