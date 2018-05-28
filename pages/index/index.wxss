@@ -40,18 +40,6 @@
   height: 100%;
 }
 
-.product-container .product-item .product-name {
-  width: 100%;
-  text-align: center;
-  font-size: 22rpx;
-  color: #444;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-}
-
 /* hotproduct */
 .hot-product-container {
   display:flex;
@@ -79,9 +67,8 @@
   height:220rpx;
 }
 
-.hot-product-container .product-info .product-name {
+.product-name {
   text-align: center;
-  min-height: 34rpx;
   font-size: 22rpx;
   display: -webkit-box;
   overflow: hidden;
@@ -92,7 +79,7 @@
   -webkit-box-orient: vertical;
 }
 
-.hot-product-container .product-info .product-price {
+.product-price {
   width:280rpx;
   overflow:hidden;
   font-size:24rpx;

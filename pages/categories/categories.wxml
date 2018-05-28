@@ -1,0 +1,20 @@
+<view class='categories-container'>
+  <view class='left'>
+  <scroll-view scroll-y style="height: 100%;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+    <view wx:for="{{classification}}" wx:key="index">
+      <view class='categories-item' bindtap="tabClick" id="{{item.id}}">
+        <view class='name'>
+          {{item.name}}
+        </view>
+        <view class='icon'>
+          1
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+  </view>
+  <view class='right'>
+    <view>
+    </view>
+  </view>
+</view>

@@ -3,13 +3,38 @@ const util = require('../../utils/util.js')
 
 Page({
   data: {
-    logs: []
+    classification: [],
+    productList: [],
+    activeCategoryId: 0,
+    p: 0,
+    pageSize: 10
   },
   onLoad: function () {
-    this.setData({
-      logs: (wx.getStorageSync('logs') || []).map(log => {
-        return util.formatTime(new Date(log))
-      })
-    })
+    var that = this;
+    util.request('get','Api/Archive/getGoodsCats',{},function(res){
+      that.setData({
+        classification: res.data.data,
+        activeCategoryId: res.data.data[0].id
+      });
+      that.getProductList();
+    });
+  },
+  tabClick: function (e) {
+    if (this.data.activeCategoryId != e.currentTarget.id) {
+      this.setData({
+        activeCategoryId: e.currentTarget.id
+      });
+      this.getProductList();
+    }
+  },
+  getProductList: function () {
+    var that = this;
+    util.request("get", "Api/Archive/getList",{
+      p: that.data.p,
+      pageSize: that.data.pageSize,
+      cat_id: that.data.activeCategoryId
+    },function(res){
+      console.log(res);
+    });
   }
-})
+});

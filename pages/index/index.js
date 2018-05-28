@@ -1,6 +1,8 @@
+
 //index.js
 //获取应用实例
-const app = getApp()
+const app = getApp();
+var util = require('../../utils/util.js');
 Page({
   data: {
     homeData: {},
@@ -26,30 +28,16 @@ Page({
   onLoad: function () {
     var that = this;
     that.data.hotDataPara.p++;
-    wx.showToast({
-      title: 'loading',
-      icon: 'loading',
-      duration: 1000,
-      mask: true
-    })
-    wx.request({
-      url: 'http://api.mall.thatsmags.com/Api/Public/home',
-      success: function (res) {
-        console.log(res);
-        that.setData({
-          homeData: res.data.data
-        });
-      }
+    util.request("get", "Api/Public/home", {}, function (res){
+      that.setData({
+        homeData: res.data.data
+      });
     });
-    wx.request({
-      url: 'http://api.mall.thatsmags.com/Api/Set/getList',
-      data: that.data.hotDataPara,
-      success: function (res) {
-        that.setData({
-          hotData: that.data.hotData.concat(res.data.data.goods)
-        });
-      }
-    });
+    util.request("get", "Api/Set/getList", that.data.hotDataPara, function (res) {
+      that.setData({
+        hotData: that.data.hotData.concat(res.data.data.goods)
+      });
+    }, false, false, false);
   },
   onPullDownRefresh: function () {
     
@@ -57,14 +45,10 @@ Page({
   onReachBottom: function () {
     var that = this;
     that.data.hotDataPara.p++;
-    wx.request({
-      url: 'http://api.mall.thatsmags.com/Api/Set/getList',
-      data: that.data.hotDataPara,
-      success: function (res) {
-        that.setData({
-          hotData: that.data.hotData.concat(res.data.data.goods)
-        });
-      }
-    });
+    util.request("get", "Api/Set/getList", that.data.hotDataPara, function (res) {
+      that.setData({
+        hotData: that.data.hotData.concat(res.data.data.goods)
+      });
+    }, false, false, false);
   },
 })

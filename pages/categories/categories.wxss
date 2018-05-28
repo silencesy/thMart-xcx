@@ -1,0 +1,30 @@
+page,.categories-container {
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  display: flex;
+}
+.left {
+  flex: 2.5;
+  background: yellow;
+}
+.categories-item {
+  display: flex;
+  height: 60rpx;
+  line-height: 60rpx; 
+  border-bottom: 1px solid #ddd;
+}
+.categories-item .name {
+  flex: 3;
+  text-align: left;
+  padding-left: 15rpx;
+}
+.categories-item .icon {
+  flex: 1;
+  text-align: center
+}
+.right {
+  flex: 5;
+  background: blue;
+  padding: 15rpx;
+}
