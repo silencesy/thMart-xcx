@@ -1,5 +1,6 @@
 .article-container {
   width: 100%;
+  margin-top: 10px;
 }
 .article-container > image {
   width:100%;
@@ -9,6 +10,7 @@
 
 .article-box {
   display: flex;
+  height: 280rpx;
 }
 .imgbox {
   flex: 3;
@@ -20,8 +22,11 @@
 }
 .info {
   flex: 5;
-  padding-right: 15rpx;
+  padding: 15rpx;
+  position: relative;
 }
 .info .data {
-  text-align: right;
+  position: absolute;
+  right: 15rpx;
+  bottom: 15rpx;
 }
