@@ -6,8 +6,8 @@
         <view class='name'>
           {{item.name}}
         </view>
-        <view class='icon'>
-          1
+        <view class='icon iconfont icon-shoucang1'>
+          
         </view>
       </view>
     </view>

@@ -1,1 +1,2 @@
 <button>123</button>
+<text class="iconfont icon-yanjing">{{yanjing}}</text>
