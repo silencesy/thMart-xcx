@@ -11,8 +11,8 @@
   <navigator url='' class='state-title' hover-class="none">
     <view class='state-order'>Orders</view>
     <view class='state-all'>
-        <view>All</view>
-        <icon class='iconfont icon-fanhui'></icon>
+        <text>All</text>
+        <view class='iconfont icon-fanhui'></view>
     </view>
   </navigator>
   <view class='state-content'>
