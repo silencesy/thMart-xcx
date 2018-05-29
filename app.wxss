@@ -123,3 +123,6 @@ view {
   font-size:24rpx;
   color: #444;
 }
+page {
+  background-color: #E8E8E8;
+}

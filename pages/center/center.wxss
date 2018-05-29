@@ -1,0 +1,98 @@
+.center-top {
+  display: flex;
+  padding: 30rpx 20rpx;
+  height: 110rpx;
+  background-color: #fff;
+  margin-bottom: 20rpx;
+}
+.left {
+  flex: 1;
+
+}
+.right {
+  flex: 1;
+  text-align: right;
+  line-height: 110rpx;
+  font-size: 28rpx;
+}
+.left-content {
+  display: flex;
+}
+.touxiang {
+  flex: 0.5;
+  width: 100rpx;
+  height: 112rpx;
+  border-radius: 50%;
+}
+.name {
+  flex: 1;
+  line-height: 110rpx;
+  font-size: 28rpx;
+  margin-left: 20rpx;
+}
+
+.center-state {
+  background-color: #fff;
+  width: 100%;
+  margin-bottom: 20rpx;
+}
+.state-title {
+  display: flex;
+  height: 60rpx;
+  line-height: 60rpx;
+  padding: 20rpx 20rpx;
+  border-bottom: 1px solid #dfdfdf;
+  
+}
+.state-order {
+  flex: 5;
+  text-align: left;
+  font-size: 30rpx;
+}
+.state-all {
+  flex: 5;
+  text-align: right;
+  font-size: 30rpx;
+  color: #999;
+}
+
+.state-all .icon-fanhui {
+  transform:rotate(180deg);
+  margin-left: 10rpx;
+}
+.state-content {
+  display: flex;
+}
+.state-content > navigator {
+  flex: 1;
+  text-align: center;
+  padding: 20rpx 0;
+}
+.state-content > navigator view {
+  color: #f6442b;
+}
+.state-content > navigator .iconfont {
+  font-size: 75rpx;
+}
+
+.center-bottom {
+  background: #fff;
+  padding: 20rpx 0 20rpx 20rpx;
+}
+.bottom-content {
+  display: flex;
+}
+.bottom-one {
+  margin-bottom: 20rpx;
+}
+.bottom-content navigator {
+  flex: 1;
+  background-color: #f2f2f2;
+  text-align: center;
+  margin-right: 20rpx;
+  padding: 30rpx 0;
+}
+.bottom-content navigator .iconfont {
+  font-size: 75rpx;
+   color: #b0b0b0; 
+}
