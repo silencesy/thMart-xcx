@@ -29,6 +29,7 @@ Page({
     var that = this;
     that.data.hotDataPara.p++;
     util.request("get", "Api/Public/home", {}, function (res){
+      console.log(res);
       that.setData({
         homeData: res.data.data
       });

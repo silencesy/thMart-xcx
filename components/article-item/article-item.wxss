@@ -10,7 +10,7 @@
 
 .article-box {
   display: flex;
-  height: 280rpx;
+  height: 240rpx;
 }
 .imgbox {
   flex: 3;

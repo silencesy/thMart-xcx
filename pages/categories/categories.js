@@ -20,6 +20,9 @@ Page({
     });
   },
   tabClick: function (e) {
+    this.setData({
+      p: 0
+    });
     if (this.data.activeCategoryId != e.currentTarget.id) {
       this.setData({
         activeCategoryId: e.currentTarget.id
@@ -30,11 +33,13 @@ Page({
   getProductList: function () {
     var that = this;
     util.request("get", "Api/Archive/getList",{
-      p: that.data.p,
+      p: ++that.data.p,
       pageSize: that.data.pageSize,
       cat_id: that.data.activeCategoryId
     },function(res){
-      console.log(res);
+      that.setData({
+        productList: res.data.data.goods
+      })
     });
   }
 });

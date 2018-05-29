@@ -1,16 +1,16 @@
 <article-component>
   <view class='article-container'>
     <slot></slot>
-    <view class='article-box'>
+    <view class='article-box' wx:for="{{articleListData}}">
       <view class='imgbox'>
-        <image src='http://api.mall.thatsmags.com/Public/ckfinder/images/toys/NERF/A4492/A449295111.jpg'></image>
+        <image src='{{item.set_img}}'></image>
       </view>
       <view class='info'>
         <view class='text'>
-          Our Kids Will Love These Fun NERF Toys
+          {{item.article_name}}
         </view>
         <view class='data'>
-          2018-05-25
+          {{item.create_time}}
         </view>
       </view>
     </view>

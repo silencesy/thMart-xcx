@@ -1,20 +1,19 @@
 <view class='categories-container'>
   <view class='left'>
-  <scroll-view scroll-y style="height: 100%;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+  <scroll-view scroll-y style="height: 100%;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll">
     <view wx:for="{{classification}}" wx:key="index">
       <view class='categories-item' bindtap="tabClick" id="{{item.id}}">
         <view class='name'>
           {{item.name}}
         </view>
-        <view class='icon iconfont icon-shoucang1'>
-          
-        </view>
+        <view class='icon iconfont icon-fanhui'></view>
       </view>
     </view>
   </scroll-view>
   </view>
   <view class='right'>
-    <view>
-    </view>
+     <scroll-view scroll-y style="height: 100%;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll">
+        <product-item productListData="{{productList}}"></product-item>
+     </scroll-view>
   </view>
 </view>

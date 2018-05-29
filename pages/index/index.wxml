@@ -41,8 +41,8 @@
         </scroll-view>
     </view>
 </view>
-<article-item>
-  <image src='http://api.mall.thatsmags.com/Public/ckfinder/images/banner/floor/3Editor.png'></image>
+<article-item articleListData='{{homeData.article.list}}'>
+  <image src='{{homeData.article.image}}'></image>
 </article-item>
 <view class='section'>
     <image class='section-banner' lazy-load="true" src='{{homeData.feature_products.image}}'></image>
@@ -87,7 +87,6 @@
           <view class='product-price'>{{item.goods_price}}</view>
           <view class='product-price'>{{item.goods_price}}</view>
         </view>
-        
       </view>
     </view>
   </view>
