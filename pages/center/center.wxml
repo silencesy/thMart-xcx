@@ -1,0 +1,54 @@
+<view class='center-top'>
+  <view class='left'>
+    <view class='left-content'>
+      <image class='touxiang' src='../../images/touxiang.png'></image>
+      <view class='name'>鞋带</view>
+    </view>
+  </view>
+  <navigator class='right' url="/pages/productdetail/productdetail" hover-class="none">Edit</navigator> 
+</view>
+<view class='center-state'>
+  <navigator url='' class='state-title' hover-class="none">
+    <view class='state-order'>Orders</view>
+    <view class='state-all'>
+        <view>All</view>
+        <icon class='iconfont icon-fanhui'></icon>
+    </view>
+  </navigator>
+  <view class='state-content'>
+    <navigator url='' hover-class="none">
+      <view class='iconfont icon-daifukuan'></view>
+      <view>Unpaid</view>
+    </navigator>
+    <navigator url='' hover-class="none">
+      <view class='iconfont icon-fahuo'></view>
+      <view>Paid</view>
+    </navigator>
+    <navigator url='' hover-class="none">
+      <view class='iconfont icon-daishouhuo'></view>
+      <view>Shipped</view>
+    </navigator>
+  </view>
+</view>
+<view class='center-bottom'>
+  <view class='bottom-content bottom-one'>
+    <navigator url='' hover-class="none">
+      <view class='iconfont icon-shouhuodizhi'></view>
+      <view>Address Book</view>
+    </navigator>
+    <navigator url='' hover-class="none">
+      <view class='iconfont icon-shoucang'></view>
+      <view>Wishlist</view>
+    </navigator>
+  </view>
+  <view class='bottom-content'>
+    <navigator url='' hover-class="none">
+      <view class='iconfont icon-youhuiquan'></view>
+      <view>thMart-Coupons</view>
+    </navigator>
+    <navigator url='' hover-class="none">
+      <view class='iconfont icon-shouhou'></view>
+      <view>Customer Service</view>
+    </navigator>
+  </view>
+</view>

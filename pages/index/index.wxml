@@ -41,6 +41,7 @@
         </scroll-view>
     </view>
 </view>
+
 <article-item articleListData='{{homeData.article.list}}'>
   <image src='{{homeData.article.image}}'></image>
 </article-item>

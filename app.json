@@ -4,7 +4,8 @@
     "pages/categories/categories",
     "pages/guide/guide",
     "pages/cart/cart",
-    "pages/center/center"
+    "pages/center/center",
+    "pages/productdetail/productdetail" 
   ],
   "window":{
     "backgroundTextStyle":"dark",
