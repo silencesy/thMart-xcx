@@ -1,0 +1,6 @@
+.product-swiper {
+  height: 750rpx;
+}
+.product-swiper image {
+  width: 100%;
+}

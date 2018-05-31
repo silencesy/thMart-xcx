@@ -12,11 +12,11 @@
     <view class='product-container'>
         <scroll-view class='product-scroll' scroll-x="true">
           <block wx:for="{{homeData.deal.list}}" wx:key="*this">
-            <view class='product-item' product-item="{{item.id}}">
+            <view class='product-item' bindtap="toDetailsTap" data-id="{{item.id}}">
               <image src='{{item.coverpic}}'></image>
               <view class='product-name'>{{item.goods_name}}</view>
               <view class='product-price-box'>
-                <view class='product-price'>{{item.goods_price}}</view>
+                <view class='product-price'>￥{{item.goods_price}}</view>
                 <view class='product-price'>{{item.goods_price}}</view>
               </view>
             </view>
@@ -29,11 +29,11 @@
     <view class='product-container'>
         <scroll-view class='product-scroll' scroll-x="true">
           <block wx:for="{{homeData.ticketing.list}}" wx:key="*this">
-            <view class='product-item' product-item="{{item.id}}">
+            <view class='product-item' bindtap="toDetailsTap" data-id="{{item.id}}">
               <image src='{{item.coverpic}}'></image>
               <view class='product-name'>{{item.goods_name}}</view>
               <view class='product-price-box'>
-                <view class='product-price'>{{item.goods_price}}</view>
+                <view class='product-price'>￥{{item.goods_price}}</view>
                 <view class='product-price'>{{item.goods_price}}</view>
               </view>
             </view>
@@ -50,11 +50,11 @@
     <view class='product-container'>
         <scroll-view class='product-scroll' scroll-x="true">
           <block wx:for="{{homeData.feature_products.list}}" wx:key="*this">
-            <view class='product-item' product-item="{{item.id}}">
+            <view class='product-item' bindtap="toDetailsTap" data-id="{{item.id}}">
               <image src='{{item.coverpic}}'></image>
               <view class='product-name'>{{item.goods_name}}</view>
               <view class='product-price-box'>
-                <view class='product-price'>{{item.goods_price}}</view>
+                <view class='product-price'>￥{{item.goods_price}}</view>
                 <view class='product-price'>{{item.goods_price}}</view>
               </view>
             </view>
@@ -62,12 +62,12 @@
         </scroll-view>
     </view>
 </view>
-<view class='section'>
+<view class='section shop'>
     <image class='section-banner' lazy-load="true" src='{{homeData.feature_shop.image}}'></image>
     <view class='product-container'>
         <scroll-view class='product-scroll' scroll-x="true">
           <block wx:for="{{homeData.feature_shop.list}}" wx:key="*this">
-            <view class='product-item' product-item="{{item.id}}">
+            <view class='product-item'>
               <image src='{{item.coverpic}}'></image>
               <view class='product-name'>{{item.merchant_name}}</view>
             </view>
@@ -78,14 +78,14 @@
 <view class='section'>
   <image class='section-banner' lazy-load="true" src='{{homeData.hot_products.image}}'></image>
   <view class='hot-product-container'>
-    <view class='product-item' wx:for="{{hotData}}" wx:key="*this">
+    <view class='product-item' wx:for="{{hotData}}" wx:key="{{index}}" bindtap="toDetailsTap" data-id="{{item.id}}">
       <view class='imgbox'>
         <image src="{{item.coverpic}}"></image>
       </view>
       <view class='product-info'>
         <view class='product-name'>{{item.goods_name}}</view>
         <view class='product-price-box'>
-          <view class='product-price'>{{item.goods_price}}</view>
+          <view class='product-price'>￥{{item.goods_price}}</view>
           <view class='product-price'>{{item.goods_price}}</view>
         </view>
       </view>

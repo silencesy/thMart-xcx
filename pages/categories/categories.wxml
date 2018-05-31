@@ -12,7 +12,7 @@
   </scroll-view>
   </view>
   <view class='right'>
-     <scroll-view scroll-y style="height: 100%;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll">
+     <scroll-view scroll-y style="height: 100%;" scroll-top="{{scrollTop}}" enable-back-to-top="true" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll">
         <product-item productListData="{{productList}}"></product-item>
      </scroll-view>
   </view>

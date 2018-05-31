@@ -1,1 +1,11 @@
-<view>123</view>
+<swiper class='product-swiper' indicator-dots="{{swiperConfig.indicatorDots}}"
+  autoplay="{{swiperConfig.autoplay}}" interval="{{swiperConfig.interval}}" duration="{{swiperConfig.duration}}" circular="{{swiperConfig.circular}}" indicator-color="{{swiperConfig.indicatorColor}}" indicator-active-color="{{swiperConfig.indicatorActiveColor}}">
+  <block wx:for="{{productDetailsData.figure}}" wx:key="*this">
+    <swiper-item>
+      <image src="{{item}}"  mode="widthFix"/>
+    </swiper-item>
+  </block>
+</swiper>
+<view>
+  {{productDetailsData.goods_name}}
+</view>

@@ -5,26 +5,27 @@ page,.categories-container {
   background-color: #fff;
 }
 .left {
-  flex: 2.5;
+  flex: 1.1;
   box-shadow: 0px 0px 20px #ddd;
 }
 .categories-item {
   display: flex;
-  height: 60rpx;
-  line-height: 60rpx; 
+  height: 80rpx;
+  line-height: 80rpx;
   border-bottom: 1px solid #ddd;
 }
 .categories-item .name {
   flex: 3;
   text-align: left;
   padding-left: 20rpx;
+  font-size: 26rpx;
 }
 .categories-item .icon {
   flex: 1;
   text-align: center
 }
 .right {
-  flex: 5;
+  flex: 2;
 }
 .iconfont.icon-fanhui {
   color: #bbb;

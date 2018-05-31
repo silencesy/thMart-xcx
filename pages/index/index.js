@@ -8,8 +8,9 @@ Page({
     homeData: {},
     hotDataPara: {
       set_position: 12,
-      pageSize: 9,
-      p: 0
+      pageSize: 15,
+      p: 0,
+      totalPages: -1
     },
     hotData: [],
     swiperConfig: {
@@ -35,21 +36,27 @@ Page({
       });
     });
     util.request("get", "Api/Set/getList", that.data.hotDataPara, function (res) {
+      that.data.hotDataPara.totalPages = res.data.data.totalPages;
       that.setData({
         hotData: that.data.hotData.concat(res.data.data.goods)
       });
     }, false, false, false);
-  },
-  onPullDownRefresh: function () {
-    
   },
   onReachBottom: function () {
     var that = this;
-    that.data.hotDataPara.p++;
-    util.request("get", "Api/Set/getList", that.data.hotDataPara, function (res) {
-      that.setData({
-        hotData: that.data.hotData.concat(res.data.data.goods)
+    if (that.data.hotDataPara.p != that.data.hotDataPara.totalPages){
+      that.data.hotDataPara.p++;
+      util.request("get", "Api/Set/getList", that.data.hotDataPara, function (res) {
+        that.setData({
+          hotData: that.data.hotData.concat(res.data.data.goods),
+
+        });
       });
-    }, false, false, false);
+    }
   },
+  toDetailsTap: function(e) {
+    wx.navigateTo({
+      url: "../../pages/productdetail/productdetail?id=" + e.currentTarget.dataset.id
+    })
+  }
 })
