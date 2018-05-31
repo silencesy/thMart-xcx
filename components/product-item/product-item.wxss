@@ -1,11 +1,18 @@
 .product-container {
-  padding: 15rpx; 
+  box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  padding-right: 20rpx;
+  padding-top: 20rpx;
   width: 100%;
   display: flex;
   flex-wrap:wrap; 
 }
 .product-container .product-item {
-   width: 50%;
+  box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  width: 50%;
+  padding-left: 20rpx;
+  border-radius: 16rpx;
 }
 
 .product-name.line2 {

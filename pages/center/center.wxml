@@ -12,7 +12,7 @@
     <view class='state-order'>Orders</view>
     <view class='state-all'>
         <view>All</view>
-        <icon class='iconfont icon-fanhui'></icon>
+        <view class='iconfont icon-fanhui'></view>
     </view>
   </navigator>
   <view class='state-content'>

@@ -35,11 +35,15 @@ Page({
     util.request("get", "Api/Archive/getList",{
       p: ++that.data.p,
       pageSize: that.data.pageSize,
-      cat_id: that.data.activeCategoryId
+      cat_id: that.data.activeCategoryId,
+      sort: "null"
     },function(res){
       that.setData({
         productList: res.data.data.goods
       })
     });
+  },
+  lower: function () {
+    console.log(1);
   }
 });
