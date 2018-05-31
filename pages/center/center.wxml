@@ -5,7 +5,7 @@
       <view class='name'>鞋带</view>
     </view>
   </view>
-  <navigator class='right' url="/pages/productdetail/productdetail" hover-class="none">Edit</navigator> 
+  <navigator class='right' url="/pages/userinfo/userinfo" hover-class="none">Edit</navigator> 
 </view>
 <view class='center-state'>
   <navigator url='' class='state-title' hover-class="none">
@@ -46,7 +46,7 @@
       <view class='iconfont icon-youhuiquan'></view>
       <view>thMart-Coupons</view>
     </navigator>
-    <navigator url='' hover-class="none">
+    <navigator url='/pages/service/service' hover-class="none">
       <view class='iconfont icon-shouhou'></view>
       <view>Customer Service</view>
     </navigator>

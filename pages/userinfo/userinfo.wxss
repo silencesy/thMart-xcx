@@ -1,0 +1,48 @@
+.userinfo {
+  background-color: #fff;
+  padding: 0 20rpx;
+}
+.info-item {
+  display: flex;
+  border-bottom: 1px solid #dfdfdf;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.info-touxiang {
+  padding: 30rpx 0;
+}
+.info-item > view:first-child {
+  flex: 5;
+  font-size: 30rpx;
+}
+.info-item > view:nth-child(2) {
+  flex: 5;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 30rpx;
+  color: #999;
+}
+.userinfo .touxiang {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+.userinfo .icon-fanhui {
+  transform:rotate(180deg);
+  margin-left: 30rpx;
+  font-size: 24rpx;
+}
+.info-item .name {
+  padding-right: 15rpx;
+}
+
+.sign-out {
+  margin-top: 20rpx;
+  background-color: #fff;
+  color: #f6442b;
+}
+
+.picker {
+  width: 100%;
+  display: block;
+}

@@ -1,11 +1,13 @@
 {
   "pages":[
+    "pages/userinfo/userinfo",
     "pages/index/index",
     "pages/categories/categories",
     "pages/guide/guide",
     "pages/cart/cart",
     "pages/center/center",
-    "pages/productdetail/productdetail" 
+    "pages/productdetail/productdetail",
+    "pages/service/service"
   ],
   "window":{
     "backgroundTextStyle":"dark",

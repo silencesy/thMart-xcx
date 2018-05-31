@@ -53,7 +53,7 @@
   flex: 5;
   font-size: 30rpx;
   color: #999;
-   display: flex; 
+  display: flex; 
   justify-content: flex-end;
 }
 .state-all .icon-fanhui {
@@ -95,5 +95,5 @@
 }
 .bottom-content navigator .iconfont {
   font-size: 75rpx;
-   color: #b0b0b0; 
+  color: #b0b0b0; 
 }
