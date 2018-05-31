@@ -14,15 +14,13 @@
     </view>
   </view>
   <view class="info-item">
-     <view class='gender-box'>
-      <view class="">Gender</view>
-      <text class='iconfont icon-fanhui'></text>
-    </view> 
     <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+      <view>Gender</view>
       <view class="picker">
-       {{array[index]}}
+        {{array[index]}}
+        <view class='iconfont icon-fanhui'></view>
       </view>
-    </picker> 
+    </picker>
   </view>
   <view class='info-item'>
     <view>Email</view>

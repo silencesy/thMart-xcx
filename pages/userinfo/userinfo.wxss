@@ -42,7 +42,19 @@
   color: #f6442b;
 }
 
-.picker {
+.info-item > picker {
   width: 100%;
-  display: block;
+}
+
+.info-item > picker view {
+  width: 50%;
+  float: left;
+}
+.picker {
+  text-align: right;
+}
+.picker .iconfont.icon-fanhui {
+  float: right;
+  width: auto;
+  margin-left:10rpx;
 }

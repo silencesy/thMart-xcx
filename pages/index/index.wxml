@@ -15,7 +15,7 @@
             <view class='product-item' product-item="{{item.id}}">
               <image src='{{item.coverpic}}'></image>
               <view class='product-name'>{{item.goods_name}}</view>
-              <view style='display:flex;'>
+              <view class='product-price-box'>
                 <view class='product-price'>{{item.goods_price}}</view>
                 <view class='product-price'>{{item.goods_price}}</view>
               </view>
@@ -32,7 +32,7 @@
             <view class='product-item' product-item="{{item.id}}">
               <image src='{{item.coverpic}}'></image>
               <view class='product-name'>{{item.goods_name}}</view>
-              <view style='display:flex;'>
+              <view class='product-price-box'>
                 <view class='product-price'>{{item.goods_price}}</view>
                 <view class='product-price'>{{item.goods_price}}</view>
               </view>
@@ -53,7 +53,7 @@
             <view class='product-item' product-item="{{item.id}}">
               <image src='{{item.coverpic}}'></image>
               <view class='product-name'>{{item.goods_name}}</view>
-              <view style='display:flex;'>
+              <view class='product-price-box'>
                 <view class='product-price'>{{item.goods_price}}</view>
                 <view class='product-price'>{{item.goods_price}}</view>
               </view>
@@ -84,7 +84,7 @@
       </view>
       <view class='product-info'>
         <view class='product-name'>{{item.goods_name}}</view>
-        <view style='display:flex;'>
+        <view class='product-price-box'>
           <view class='product-price'>{{item.goods_price}}</view>
           <view class='product-price'>{{item.goods_price}}</view>
         </view>

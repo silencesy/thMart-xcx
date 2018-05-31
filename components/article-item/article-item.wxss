@@ -1,6 +1,7 @@
 .article-container {
   width: 100%;
   margin-top: 10px;
+  background-color: #fff;
 }
 .article-container > image {
   width:100%;
@@ -27,6 +28,6 @@
 }
 .info .data {
   position: absolute;
-  right: 15rpx;
+  right: 24rpx;
   bottom: 15rpx;
 }

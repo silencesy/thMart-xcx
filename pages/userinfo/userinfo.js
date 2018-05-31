@@ -1,5 +1,4 @@
 const util = require('../../utils/util.js')
-
 Page({
   data: {
     array: ['Male', 'Female'],
@@ -15,13 +14,12 @@ Page({
       }
     ]
   },
-  bindPickerChange: function (e) {
-    this.setData({
-      index: 0,
-      index: e.detail.value
-    })
-  },
   onLoad: function () {
 
+  },
+  bindPickerChange: function (e) {
+    this.setData({
+      index: e.detail.value
+    })
   }
 })
