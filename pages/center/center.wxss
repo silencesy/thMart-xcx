@@ -51,16 +51,15 @@
 }
 .state-all {
   flex: 5;
-  text-align: right;
   font-size: 30rpx;
   color: #999;
-  display: flex;
+  display: flex; 
   justify-content: flex-end;
 }
-
 .state-all .icon-fanhui {
   transform:rotate(180deg);
   margin-left: 10rpx;
+  font-size: 24rpx;
 }
 .state-content {
   display: flex;
@@ -96,5 +95,5 @@
 }
 .bottom-content navigator .iconfont {
   font-size: 75rpx;
-   color: #b0b0b0; 
+  color: #b0b0b0; 
 }
