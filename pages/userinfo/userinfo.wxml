@@ -6,7 +6,7 @@
       <view class='iconfont icon-fanhui'></view>
     </view>
   </view>
-  <view class='info-item'>
+  <view class='info-item' bindtap="modalinput">
     <view>Username</view>
     <view class='name'>
       <text>鞋带</text>
@@ -39,3 +39,7 @@
 
 <button class='sign-out'>Sign out</button>
 
+<!--弹出输入框-->  
+<modal hidden="{{hiddenmodalput}}" title="Change your username" confirm-text="Done" cancel-text="Cancel" bindcancel="cancel" bindconfirm="confirm">  
+    <input type='text' placeholder="Username" auto-focus/>  
+</modal> 
