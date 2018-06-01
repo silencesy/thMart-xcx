@@ -6,9 +6,12 @@
       <view class='iconfont icon-fanhui'></view>
     </view>
   </view>
-  <view class='info-item'>
+  <view class='info-item' bindtap="modalinput">
     <view>Username</view>
-    <view class='name'>鞋带</view>
+    <view class='name'>
+      <text>鞋带</text>
+      <text class='iconfont icon-fanhui'></text>
+    </view>
   </view>
   <view class="info-item">
     <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
@@ -21,13 +24,22 @@
   </view>
   <view class='info-item'>
     <view>Email</view>
-    <view class='name'>123@qq.com</view>
+    <view class='name'>      
+      <text>123@qq.com</text>
+      <text class='iconfont icon-fanhui'></text>
+    </view>
   </view>
   <view class='info-item'>
     <view>Change Password</view>
-    <view class='iconfont icon-fanhui'></view>
+    <view>
+      <text class='iconfont icon-fanhui'></text>
+    </view>
   </view>
 </view>
 
 <button class='sign-out'>Sign out</button>
 
+<!--弹出输入框-->  
+<modal hidden="{{hiddenmodalput}}" title="Change your username" confirm-text="Done" cancel-text="Cancel" bindcancel="cancel" bindconfirm="confirm">  
+    <input type='text' placeholder="Username" auto-focus/>  
+</modal> 
