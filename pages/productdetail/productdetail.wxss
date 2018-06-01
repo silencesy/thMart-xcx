@@ -1,6 +1,61 @@
+@import "/wxParse/wxParse.wxss";
 .product-swiper {
   height: 750rpx;
 }
 .product-swiper image {
   width: 100%;
+}
+
+.title-info {
+  background-color: #fff;
+  margin-top: 20rpx;
+  padding: 24rpx;
+}
+
+.specifications-box {
+  display: flex;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin-top: 20rpx;
+  background-color: #fff;
+  padding: 0 24rpx;
+}
+
+.specifications-box view {
+  flex: 1;
+}
+
+.specifications-box view:nth-child(2) {
+  color: #bbb;
+  transform:rotate(180deg);
+  -ms-transform:rotate(180deg);
+  -moz-transform:rotate(180deg);
+  -webkit-transform:rotate(180deg);
+  -o-transform:rotate(180deg); 
+}
+
+.product-info-content {
+  background-color: #fff;
+  margin-top: 20rpx;
+}
+
+.product-info-content .title {
+  line-height: 80rpx;
+  border-bottom: 1px solid #dfdfdf;
+  padding: 0 24rpx;
+}
+
+.product-info-content .info-content {
+      padding:  24rpx 24rpx 104rpx 24rpx;   
+} 
+.wxParse-img {
+  display:block !important;
+}
+.footer-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 80rpx;
+  width: 100%;
+  background-color: red;
 }

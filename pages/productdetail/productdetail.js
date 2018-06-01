@@ -1,3 +1,4 @@
+const WxParse = require('../../wxParse/wxParse.js');
 const util = require('../../utils/util.js')
 Page({
   data: {
@@ -17,7 +18,7 @@ Page({
   },
   onLoad: function (e) {
     this.setData({
-      productId: e.id
+      productId: 120
     });
     this.getProductInfo();
   },
@@ -25,6 +26,8 @@ Page({
     var that = this;
     util.request("GET", "Api/Archive/getDetail", { id: this.data.productId},function(res){
       console.log(res);
+      const productDeatail = res.data.data.goods_content;
+      WxParse.wxParse('productDeatail', 'html', productDeatail, that, 12);
       that.setData({
         productDetailsData: res.data.data
       });

@@ -1,3 +1,4 @@
+<import src="../../wxParse/wxParse.wxml"/>
 <swiper class='product-swiper' indicator-dots="{{swiperConfig.indicatorDots}}"
   autoplay="{{swiperConfig.autoplay}}" interval="{{swiperConfig.interval}}" duration="{{swiperConfig.duration}}" circular="{{swiperConfig.circular}}" indicator-color="{{swiperConfig.indicatorColor}}" indicator-active-color="{{swiperConfig.indicatorActiveColor}}">
   <block wx:for="{{productDetailsData.figure}}" wx:key="*this">
@@ -6,6 +7,31 @@
     </swiper-item>
   </block>
 </swiper>
-<view>
-  {{productDetailsData.goods_name}}
+<view class='title-info'>
+  <view>
+    {{productDetailsData.goods_name}}
+  </view>
+  <view class='theme_color'>￥{{productDetailsData.max_price}}</view>
+  <view>
+  * This product ships to Mainland China only.(An extra shipping fee will be charged for HKSAR,MCSAR and other countries/regions)
+  </view>
+</view>
+<view class='specifications-box'>
+  <view>Specifications</view>
+   <view class='iconfont icon-fanhui'></view> 
+</view>
+<view class='product-info-content'>
+  <view class='title'>
+    Details
+  </view>
+  <view class='info-content'>
+    <template is="wxParse" data="{{wxParseData:productDeatail.nodes}}"/>
+  </view>
+</view>
+<view class='footer-container'>
+  <view></view>
+  <view></view>
+  <view></view>
+  <view></view>
+  <view></view>
 </view>
