@@ -1,8 +1,8 @@
 {
   "pages":[
-    "pages/userinfo/userinfo",
     "pages/index/index",
     "pages/categories/categories",
+    "pages/userinfo/userinfo",
     "pages/guide/guide",
     "pages/cart/cart",
     "pages/center/center",

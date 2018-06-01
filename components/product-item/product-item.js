@@ -20,7 +20,11 @@ Component({
    * 组件的方法列表
    */
   methods: {
-    
+    toDetailsTap: function (e) {
+      wx.navigateTo({
+        url: "../../pages/productdetail/productdetail?id=" + e.currentTarget.dataset.id
+      })
+    }
   },
   scrolltolower: {
     

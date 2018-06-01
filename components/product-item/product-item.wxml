@@ -1,16 +1,18 @@
 <product-component>
   <view class='product-container'>
-     <view class='product-item' wx:for="{{productListData}}">
-         <view class='product-item-imgbox'>
-            <image src="{{item.coverpic}}" mode="widthFix"></image>   
-        </view>  
-        <view class='product-info'>
-          <view class='product-name line2'>{{item.goods_name}}</view>
-          <view class='product-price-box'>
-            <view class='product-price'>￥{{item.goods_price}}</view>
-            <view class='product-price'>{{item.goods_price}}</view>
-          </view>
-        </view> 
-    </view> 
+    <block wx:for="{{productListData}}">
+      <view class='product-item' bindtap="toDetailsTap" data-id="{{item.id}}">
+          <view class='product-item-imgbox'>
+              <image src="{{item.coverpic}}" mode="widthFix"></image>   
+          </view>  
+          <view class='product-info'>
+            <view class='product-name line2'>{{item.goods_name}}</view>
+            <view class='product-price-box'>
+              <view class='product-price'>￥{{item.goods_price}}</view>
+              <view class='product-price'>{{item.goods_price}}</view>
+            </view>
+          </view> 
+      </view> 
+    </block>
   </view>
 </product-component>

@@ -1,5 +1,4 @@
 /**index.wxss**/
-
 /* 轮播 */
 .home-swiper {
   height: 410rpx;
@@ -10,13 +9,16 @@
 /* 区块 */
 .section {
   margin-top: 10px;
+  background-color: #fff;
+  height: 535rpx;
+}
+.section.shop {
+  height: 450rpx;
 }
 .section .section-banner {
   width: 100%;
   height: 150rpx;
 }
-
-
 .section .product-scroll {
   display: flex;
   white-space: nowrap;
@@ -46,14 +48,13 @@
   justify-content:space-between;
   flex-wrap:wrap;
   box-sizing:content-box;
-  padding:24rpx;
+  padding:24rpx 24rpx 0 24rpx;
+  background-color: #fff;
 }
 .hot-product-container .product-item {
   width:220rpx;
-  height:340rpx;
   background-color:#fff;
   overflow:hidden;
-  margin-bottom:24rpx;
 }
 
 .hot-product-container .product-item .imgbox {
@@ -69,7 +70,6 @@
 
 .product-name {
   text-align: center;
-  font-size: 22rpx;
   display: -webkit-box;
   overflow: hidden;
   white-space: normal!important;
@@ -77,13 +77,29 @@
   word-wrap: break-word;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
+  height: 82rpx;
+}
+.section.shop .product-name {
+  height: auto;
 }
 
+.hot-product-container .product-name {
+  height: 82rpx;
+}
+.product-price-box {
+  display: flex;
+}
 .product-price {
   width:280rpx;
+  line-height: 60rpx;
   overflow:hidden;
   font-size:24rpx;
-  padding:24rpx 0;
+  /* padding:24rpx 0; */
   color:#e64340;
   margin-left:24rpx;
+}
+
+.product-price-box .product-price:nth-child(2) {
+  color: #ccc;
+  text-decoration: line-through;
 }
