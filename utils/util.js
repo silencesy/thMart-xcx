@@ -28,7 +28,6 @@ const request = (method, path, para, backfun, failedfun, mustlogin=false,layer=t
   const url = 'http://api.mall.thatsmags.com/';
   // const url = 'http://proj7.thatsmags.com/';
   if (mustlogin && !token) {
-
     return false;
   }
   wx.request({

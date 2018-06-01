@@ -29,9 +29,22 @@
   </view>
 </view>
 <view class='footer-container'>
-  <view></view>
-  <view></view>
-  <view></view>
-  <view></view>
-  <view></view>
+  <view class='icon-item-container'>
+    <view class='icon-box'>
+      <view class='iconfont icon-shanghu1'></view>
+      <view>Home</view>
+    </view>
+    <view class='icon-box'>
+      <view class='iconfont icon-kefu'></view>
+      <view>Chat</view>
+    </view>
+    <view class='icon-box'>
+      <view class='iconfont icon-shoucang1'></view>
+      <view>Save</view>
+    </view>
+  </view>
+  <view class='item-container'>
+    <view>Add To Cart</view>
+    <view>Buy Now</view>
+  </view>
 </view>

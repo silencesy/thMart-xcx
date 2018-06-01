@@ -18,7 +18,7 @@ Page({
   },
   onLoad: function (e) {
     this.setData({
-      productId: 120
+      productId: e.id
     });
     this.getProductInfo();
   },
