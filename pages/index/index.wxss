@@ -105,17 +105,5 @@
   text-decoration: line-through;
 }
 
-.loading {
-  text-align: center;
-  height: 60rpx;
-  line-height: 60rpx;
-}
-@keyframes rotating {
-  from{transform:rotate(0)}
-  to{transform:rotate(360deg)}
-}
 
-.icon-jiazai1.iconfont {
-  animation:rotating 1.2s linear infinite;
-}
 

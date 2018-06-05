@@ -1,11 +1,10 @@
 {
   "pages":[
+    "pages/guide/guide",
     "pages/index/index",
-    "pages/cart/cart",
-    
+    "pages/cart/cart",   
     "pages/categories/categories",
     "pages/userinfo/userinfo",
-    "pages/guide/guide",
     "pages/center/center",
     "pages/productdetail/productdetail",
     "pages/service/service"
