@@ -1,0 +1,13 @@
+.guide-container {
+  background-color: #fff;
+}
+.title {
+  display: flex;
+  text-align: center;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-bottom: 1px solid #dfdfdf;
+}
+.name {
+  flex: 1;
+}
