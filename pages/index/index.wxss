@@ -55,6 +55,7 @@
   width:220rpx;
   background-color:#fff;
   overflow:hidden;
+  align-self: flex-start;
 }
 
 .hot-product-container .product-item .imgbox {

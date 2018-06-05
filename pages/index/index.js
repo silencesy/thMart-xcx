@@ -47,9 +47,9 @@ Page({
     if (that.data.hotDataPara.p != that.data.hotDataPara.totalPages){
       that.data.hotDataPara.p++;
       util.request("get", "Api/Set/getList", that.data.hotDataPara, function (res) {
+        res.data.data.goods.length = parseInt(res.data.data.goods.length / 3)*3;
         that.setData({
           hotData: that.data.hotData.concat(res.data.data.goods),
-
         });
       });
     }
