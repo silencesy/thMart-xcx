@@ -1,96 +1,99 @@
-<!--index.wxml-->
-<swiper class='home-swiper' indicator-dots="{{swiperConfig.indicatorDots}}"
-  autoplay="{{swiperConfig.autoplay}}" interval="{{swiperConfig.interval}}" duration="{{swiperConfig.duration}}" circular="{{swiperConfig.circular}}" indicator-color="{{swiperConfig.indicatorColor}}" indicator-active-color="{{swiperConfig.indicatorActiveColor}}">
-  <block wx:for="{{homeData.figure}}" wx:key="*this">
-    <swiper-item>
-      <image src="{{item.set_img}}"/>
-    </swiper-item>
-  </block>
-</swiper>
-<view class='section'>
-    <image class='section-banner' lazy-load="true" src='{{homeData.deal.image}}'></image>
-    <view class='product-container'>
-        <scroll-view class='product-scroll' scroll-x="true">
-          <block wx:for="{{homeData.deal.list}}" wx:key="*this">
-            <view class='product-item' bindtap="toDetailsTap" data-id="{{item.id}}">
-              <image src='{{item.coverpic}}'></image>
-              <view class='product-name'>{{item.goods_name}}</view>
-              <view class='product-price-box'>
-                <view class='product-price'>￥{{item.goods_price}}</view>
-                <view class='product-price'>{{item.goods_price}}</view>
+<view wx:if='{{show}}'>
+  <!--index.wxml-->
+  <swiper class='home-swiper' indicator-dots="{{swiperConfig.indicatorDots}}"
+    autoplay="{{swiperConfig.autoplay}}" interval="{{swiperConfig.interval}}" duration="{{swiperConfig.duration}}" circular="{{swiperConfig.circular}}" indicator-color="{{swiperConfig.indicatorColor}}" indicator-active-color="{{swiperConfig.indicatorActiveColor}}">
+    <block wx:for="{{homeData.figure}}" wx:key="*this">
+      <swiper-item>
+        <image src="{{item.set_img}}"/>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class='section'>
+      <image class='section-banner' lazy-load="true" src='{{homeData.deal.image}}'></image>
+      <view class='product-container'>
+          <scroll-view class='product-scroll' scroll-x="true">
+            <block wx:for="{{homeData.deal.list}}" wx:key="*this">
+              <view class='product-item' bindtap="toDetailsTap" data-id="{{item.id}}">
+                <image src='{{item.coverpic}}'></image>
+                <view class='product-name'>{{item.goods_name}}</view>
+                <view class='product-price-box'>
+                  <view class='product-price'>￥{{item.goods_price}}</view>
+                  <view class='product-price'>{{item.goods_price}}</view>
+                </view>
               </view>
-            </view>
-          </block>
-        </scroll-view>
-    </view>
-</view>
-<view class='section'>
-    <image class='section-banner' lazy-load="true" src='{{homeData.ticketing.image}}'></image>
-    <view class='product-container'>
-        <scroll-view class='product-scroll' scroll-x="true">
-          <block wx:for="{{homeData.ticketing.list}}" wx:key="*this">
-            <view class='product-item' bindtap="toDetailsTap" data-id="{{item.id}}">
-              <image src='{{item.coverpic}}'></image>
-              <view class='product-name'>{{item.goods_name}}</view>
-              <view class='product-price-box'>
-                <view class='product-price'>￥{{item.goods_price}}</view>
-                <view class='product-price'>{{item.goods_price}}</view>
-              </view>
-            </view>
-          </block>
-        </scroll-view>
-    </view>
-</view>
-
-<article-item articleListData='{{homeData.article.list}}'>
-  <image src='{{homeData.article.image}}'></image>
-</article-item>
-<view class='section'>
-    <image class='section-banner' lazy-load="true" src='{{homeData.feature_products.image}}'></image>
-    <view class='product-container'>
-        <scroll-view class='product-scroll' scroll-x="true">
-          <block wx:for="{{homeData.feature_products.list}}" wx:key="*this">
-            <view class='product-item' bindtap="toDetailsTap" data-id="{{item.id}}">
-              <image src='{{item.coverpic}}'></image>
-              <view class='product-name'>{{item.goods_name}}</view>
-              <view class='product-price-box'>
-                <view class='product-price'>￥{{item.goods_price}}</view>
-                <view class='product-price'>{{item.goods_price}}</view>
-              </view>
-            </view>
-          </block>
-        </scroll-view>
-    </view>
-</view>
-<view class='section shop'>
-    <image class='section-banner' lazy-load="true" src='{{homeData.feature_shop.image}}'></image>
-    <view class='product-container'>
-        <scroll-view class='product-scroll' scroll-x="true">
-          <block wx:for="{{homeData.feature_shop.list}}" wx:key="*this">
-            <view class='product-item'>
-              <image src='{{item.coverpic}}'></image>
-              <view class='product-name'>{{item.merchant_name}}</view>
-            </view>
-          </block>
-        </scroll-view>
-    </view>
-</view>
-<view class='section'>
-  <image class='section-banner' lazy-load="true" src='{{homeData.hot_products.image}}'></image>
-  <view class='hot-product-container'>
-    <view class='product-item' wx:for="{{hotData}}" wx:key="{{index}}" bindtap="toDetailsTap" data-id="{{item.id}}">
-      <view class='imgbox'>
-        <image src="{{item.coverpic}}"></image>
+            </block>
+          </scroll-view>
       </view>
-      <view class='product-info'>
-        <view class='product-name'>{{item.goods_name}}</view>
-        <view class='product-price-box'>
-          <view class='product-price'>￥{{item.goods_price}}</view>
-          <view class='product-price'>{{item.goods_price}}</view>
+  </view>
+  <view class='section'>
+      <image class='section-banner' lazy-load="true" src='{{homeData.ticketing.image}}'></image>
+      <view class='product-container'>
+          <scroll-view class='product-scroll' scroll-x="true">
+            <block wx:for="{{homeData.ticketing.list}}" wx:key="*this">
+              <view class='product-item' bindtap="toDetailsTap" data-id="{{item.id}}">
+                <image src='{{item.coverpic}}'></image>
+                <view class='product-name'>{{item.goods_name}}</view>
+                <view class='product-price-box'>
+                  <view class='product-price'>￥{{item.goods_price}}</view>
+                  <view class='product-price'>{{item.goods_price}}</view>
+                </view>
+              </view>
+            </block>
+          </scroll-view>
+      </view>
+  </view>
+
+  <article-item articleListData='{{homeData.article.list}}'>
+    <image src='{{homeData.article.image}}'></image>
+  </article-item>
+  <view class='section'>
+      <image class='section-banner' lazy-load="true" src='{{homeData.feature_products.image}}'></image>
+      <view class='product-container'>
+          <scroll-view class='product-scroll' scroll-x="true">
+            <block wx:for="{{homeData.feature_products.list}}" wx:key="*this">
+              <view class='product-item' bindtap="toDetailsTap" data-id="{{item.id}}">
+                <image src='{{item.coverpic}}'></image>
+                <view class='product-name'>{{item.goods_name}}</view>
+                <view class='product-price-box'>
+                  <view class='product-price'>￥{{item.goods_price}}</view>
+                  <view class='product-price'>{{item.goods_price}}</view>
+                </view>
+              </view>
+            </block>
+          </scroll-view>
+      </view>
+  </view>
+  <view class='section shop'>
+      <image class='section-banner' lazy-load="true" src='{{homeData.feature_shop.image}}'></image>
+      <view class='product-container'>
+          <scroll-view class='product-scroll' scroll-x="true">
+            <block wx:for="{{homeData.feature_shop.list}}" wx:key="*this">
+              <view class='product-item'>
+                <image src='{{item.coverpic}}'></image>
+                <view class='product-name'>{{item.merchant_name}}</view>
+              </view>
+            </block>
+          </scroll-view>
+      </view>
+  </view>
+  <view class='section'>
+    <image class='section-banner' lazy-load="true" src='{{homeData.hot_products.image}}'></image>
+    <view class='hot-product-container'>
+      <view class='product-item' wx:for="{{hotData}}" wx:key="{{index}}" bindtap="toDetailsTap" data-id="{{item.id}}">
+        <view class='imgbox'>
+          <image src="{{item.coverpic}}"></image>
+        </view>
+        <view class='product-info'>
+          <view class='product-name'>{{item.goods_name}}</view>
+          <view class='product-price-box'>
+            <view class='product-price'>￥{{item.goods_price}}</view>
+            <view class='product-price'>{{item.goods_price}}</view>
+          </view>
         </view>
       </view>
     </view>
+    <view hidden="{{loadingHidden ? true : false}}" class="loading">
+      <view class='icon-jiazai1 iconfont'></view>
+    </view>
   </view>
 </view>
-
-

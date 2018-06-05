@@ -6,11 +6,12 @@ var util = require('../../utils/util.js');
 Page({
   data: {
     homeData: {},
+    loadingHidden: false,
     hotDataPara: {
       set_position: 12,
       pageSize: 15,
       p: 0,
-      totalPages: -1
+      totalPages: -1,
     },
     hotData: [],
     swiperConfig: {
@@ -32,7 +33,8 @@ Page({
     util.request("get", "Api/Public/home", {}, function (res){
       console.log(res);
       that.setData({
-        homeData: res.data.data
+        homeData: res.data.data,
+        show: true
       });
     });
     util.request("get", "Api/Set/getList", that.data.hotDataPara, function (res) {
@@ -51,6 +53,11 @@ Page({
         that.setData({
           hotData: that.data.hotData.concat(res.data.data.goods),
         });
+      },false,false,false);
+    }
+    if (that.data.hotDataPara.p+1 == that.data.hotDataPara.totalPages) {
+      that.setData({
+        loadingHidden: true
       });
     }
   },

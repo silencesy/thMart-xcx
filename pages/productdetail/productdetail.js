@@ -13,8 +13,9 @@ Page({
       duration: 500,
       previousMargin: 0,
       nextMargin: 0,
-      circular: true
-    }
+      circular: true,
+    },
+    isshow: true
   },
   onLoad: function (e) {
     this.setData({
@@ -31,6 +32,16 @@ Page({
       that.setData({
         productDetailsData: res.data.data
       });
+    });
+  },
+  showpopup: function () {
+    this.setData({
+      isshow: false
+    });
+  },
+  hidepopup: function () {
+    this.setData({
+      isshow: true
     });
   }
 })

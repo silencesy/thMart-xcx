@@ -1,2 +1,5 @@
 {
+  "usingComponents": {
+    "add-sub": "../../components/add-sub/add-sub"
+  }
 }
