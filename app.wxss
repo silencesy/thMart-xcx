@@ -132,8 +132,25 @@ view {
   -webkit-line-clamp:2;
   -webkit-box-orient:vertical;
 }
+.line3 {
+  display:-webkit-box;
+  overflow:hidden;
+  white-space:normal!important;
+  text-overflow:ellipsis;
+  word-wrap:break-word;
+  -webkit-line-clamp:3;
+  -webkit-box-orient:vertical;
+}
 
 page {
   background-color: #E8E8E8;
 }
 
+.iconfont.icon-fanhui {
+  color: #bbb;
+  transform:rotate(180deg);
+  -ms-transform:rotate(180deg);
+  -moz-transform:rotate(180deg);
+  -webkit-transform:rotate(180deg);
+  -o-transform:rotate(180deg); 
+}

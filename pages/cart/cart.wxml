@@ -1,2 +1,37 @@
-<button>123</button>
-<text class="iconfont icon-yanjing">{{yanjing}}</text>
+<view class='cart-container'>
+  <view class='cart-empty' hidden='true'>
+    <view class='iconfont icon-gouwuche'></view>
+    <view class='prompt'>Your cart is currently empty</view>
+    <view>
+      <view class='shopping-btn' bindtap='goIndex'>Start Shopping</view>
+    </view>
+  </view>
+  <view class='cart-list'>
+    <view class='shop-item'>
+      <view class='title'>
+        <view class='iconfont icon-duihao'></view><view class='shop-name'>name</view><view class='iconfont icon-fanhui'></view>
+      </view>
+      <view class='product-item' wx:for="{{list}}" wx:key="index">
+        <view class="content {{item.move?'slide-distance':''}}" bindtap="selectTap" bindtouchstart="touchS" bindtouchmove="touchM" bindtouchend="touchE" data-index="{{index}}">
+          <view class='iconfont icon-duihao'></view>
+          <view class='image-box'>
+            <image src="{{item.goods_picture}}" mode='widthFix'></image>
+          </view>
+          <view class='info'>
+            <view class='info-title line2'>{{item.goods_name}}</view>
+            <view class='info-type'>{{item.goods_type_one}}</view>
+            <view class='price-count'>
+              <view class='price'><text class='theme_color'>￥{{item.goods_price}}</text> <text>123123</text></view>
+              <view>
+                <add-sub icon-class-add="icon-jia iconfont" icon-class-sub="icon-icon iconfont" defaultNumber="10"></add-sub> 
+              </view>
+            </view>
+          </view>
+          <view class='delete-icon'>Delete</view>
+        </view>
+      </view>
+
+    </view>
+
+  </view>
+</view>

@@ -1,10 +1,11 @@
 {
   "pages":[
+    
+    "pages/cart/cart",
     "pages/index/index",
     "pages/categories/categories",
     "pages/userinfo/userinfo",
     "pages/guide/guide",
-    "pages/cart/cart",
     "pages/center/center",
     "pages/productdetail/productdetail",
     "pages/service/service"
@@ -15,7 +16,7 @@
     "navigationBarBackgroundColor": "#f6442b",
     "navigationBarTitleText": "thMart",
     "navigationBarTextStyle":"white",
-    "onReachBottomDistance": "50px"
+    "onReachBottomDistance": "0px"
   },
   "tabBar": {
     "backgroundColor": "#fff",

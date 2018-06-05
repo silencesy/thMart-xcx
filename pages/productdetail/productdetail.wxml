@@ -1,50 +1,105 @@
 <import src="../../wxParse/wxParse.wxml"/>
-<swiper class='product-swiper' indicator-dots="{{swiperConfig.indicatorDots}}"
+<view wx:if="{{productDetailsData.goods_name}}">
+  <swiper class='product-swiper' indicator-dots="{{swiperConfig.indicatorDots}}"
   autoplay="{{swiperConfig.autoplay}}" interval="{{swiperConfig.interval}}" duration="{{swiperConfig.duration}}" circular="{{swiperConfig.circular}}" indicator-color="{{swiperConfig.indicatorColor}}" indicator-active-color="{{swiperConfig.indicatorActiveColor}}">
-  <block wx:for="{{productDetailsData.figure}}" wx:key="*this">
-    <swiper-item>
-      <image src="{{item}}"  mode="widthFix"/>
-    </swiper-item>
-  </block>
-</swiper>
-<view class='title-info'>
-  <view>
-    {{productDetailsData.goods_name}}
+    <block wx:for="{{productDetailsData.figure}}" wx:key="*this">
+      <swiper-item>
+        <image src="{{item}}"  mode="widthFix"/>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class='title-info'>
+      <view>
+        {{productDetailsData.goods_name}}
+      </view>
+      <view class='theme_color'>￥{{productDetailsData.max_price}}</view>
+      <view>
+      * This product ships to Mainland China only.(An extra shipping fee will be charged for HKSAR,MCSAR and other countries/regions)
+      </view>
   </view>
-  <view class='theme_color'>￥{{productDetailsData.max_price}}</view>
-  <view>
-  * This product ships to Mainland China only.(An extra shipping fee will be charged for HKSAR,MCSAR and other countries/regions)
+  <view class='specifications-box' bindtap='showpopup'>
+    <view>Specifications</view>
+    <view class='iconfont icon-fanhui'></view> 
   </view>
-</view>
-<view class='specifications-box'>
-  <view>Specifications</view>
-   <view class='iconfont icon-fanhui'></view> 
-</view>
-<view class='product-info-content'>
-  <view class='title'>
-    Details
-  </view>
-  <view class='info-content'>
-    <template is="wxParse" data="{{wxParseData:productDeatail.nodes}}"/>
-  </view>
-</view>
-<view class='footer-container'>
-  <view class='icon-item-container'>
-    <view class='icon-box'>
-      <view class='iconfont icon-shanghu1'></view>
-      <view>Home</view>
+  <view class='product-info-content'>
+    <view class='title'>
+      Details
     </view>
-    <view class='icon-box'>
-      <view class='iconfont icon-kefu'></view>
-      <view>Chat</view>
-    </view>
-    <view class='icon-box'>
-      <view class='iconfont icon-shoucang1'></view>
-      <view>Save</view>
+    <view class='info-content'>
+      <template is="wxParse" data="{{wxParseData:productDeatail.nodes}}"/>
     </view>
   </view>
-  <view class='item-container'>
-    <view>Add To Cart</view>
-    <view>Buy Now</view>
+  <view class='footer-container'>
+    <view class='icon-item-container'>
+      <view class='icon-box'>
+        <view class='iconfont icon-shanghu1'></view>
+        <view>Home</view>
+      </view>
+      <view class='icon-box'>
+        <view class='iconfont icon-kefu'></view>
+        <view>Chat</view>
+      </view>
+      <view class='icon-box'>
+        <view class='iconfont icon-shoucang1'></view>
+        <view>Save</view>
+      </view>
+    </view>
+    <view class='item-container'>
+      <view bindtap='showpopup'>Add To Cart</view>
+      <view bindtap='showpopup'>Buy Now</view>
+    </view>
+  </view>
+  <view class='show-popup' hidden='{{isshow}}'>
+    <view class='popup-mask' bindtap='hidepopup'></view>
+    <view class='popup-contents'>
+      <view class='title'>
+        <view class='pop-img-box'>
+          <image src='{{productDetailsData.price.goods_picture}}' mode="widthFix"></image>
+        </view>
+        <view class='product-info'>
+            <view class='theme_color'>{{productDetailsData.price.goods_price}}</view>
+            <view>{{productDetailsData.price.goods_stock}}</view>
+            <view class='line3'>{{productDetailsData.goods_name}}</view>
+        </view>
+        <view class='iconfont icon-guanbi' bindtap='hidepopup'></view>
+      </view>
+      <view class='types'>
+        <scroll-view class='type-scroll' scroll-y>
+          <view class='type-item'>
+            <view class='types-name'>{{productDetailsData.type_name_one}}</view>
+            <view>
+                <button wx:for="{{productDetailsData.goods_type_one}}" class='btn'>{{item}}</button>
+            </view>
+          </view>
+          <block wx:if="{{productDetailsData.type_name_two}}">
+            <view class='type-item'>
+              <view class='types-name'>{{productDetailsData.type_name_two}}</view>
+              <view>
+                <button wx:for="{{productDetailsData.goods_type_two}}" class='btn'>{{item}}</button>
+              </view>
+            </view>
+          </block>
+          
+        </scroll-view>
+        
+      </view>
+      <view class='count-box'>
+        <view>Quantity</view>
+        <view>
+          <view class='add-sub-container'>
+            <add-sub icon-class-add="icon-jia iconfont" icon-class-sub="icon-icon iconfont" defaultNumber="1"></add-sub>
+          </view>
+           
+        </view>
+      </view>
+      
+      <view>
+      </view> 
+      <view class='popup-btn-arr'>
+        <view>Add To Cart</view>
+        <view>Buy Now</view>
+      </view> 
+    </view>
   </view>
 </view>
+

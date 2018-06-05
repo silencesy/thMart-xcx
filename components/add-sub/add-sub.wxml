@@ -1,0 +1,7 @@
+<add-sub-component>
+  <view class='add-sub-box'>
+    <view class="icon-class-sub" bindtap='sub'></view>
+    <view class='icon-class'>{{defaultNumber}}</view>
+    <view class="icon-class-add" bindtap='add'></view>
+  </view>
+</add-sub-component>
