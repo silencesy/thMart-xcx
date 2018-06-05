@@ -1,0 +1,18 @@
+<view class='guide-container'>
+  <view class='title'>
+    <view class='name' wx:for="{{classification}}" wx:key="index">
+      <view bindtap="tabClick" id="{{item.id}}">
+        <view>
+          {{item.name}}
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='content'>
+     <scroll-view scroll-y scroll-top="{{scrollTop}}" enable-back-to-top="true" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll">
+        <article-item articleListData='{{articleList}}'>
+          
+        </article-item>
+     </scroll-view>
+  </view>   
+</view>
