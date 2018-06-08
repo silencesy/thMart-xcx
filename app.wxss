@@ -154,3 +154,18 @@ page {
   -webkit-transform:rotate(180deg);
   -o-transform:rotate(180deg); 
 }
+
+/* 上拉加载动画 */
+.loading {
+  text-align: center;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+@keyframes rotating {
+  from{transform:rotate(0)}
+  to{transform:rotate(360deg)}
+}
+
+.icon-jiazai1.iconfont {
+  animation:rotating 1.2s linear infinite;
+}

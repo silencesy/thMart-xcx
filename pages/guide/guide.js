@@ -7,9 +7,10 @@ Page({
     articleList: [],
     activeCategoryId: 1,
     p: 0,
-    pageSize: 10,
+    pageSize: 100,
     totalPages: -1,
-    scrollTop: 0
+    scrollTop: 0,
+    loadingHidden: false
   },
   onLoad: function () {
     var that = this;
@@ -26,29 +27,42 @@ Page({
         scrollTop: 0
       });
       // 请求数据
-      this.getArticleList();
+      this.getArticleList(false,true);
     }
   },
   // 获取数据
-  getArticleList: function () {
+  getArticleList: function (concat,showlayer) {
     var that = this;
-    util.request('get', 'Api/Article/getList', {
-      cat_id: that.data.activeCategoryId,
-      p: that.data.p++,
-      pageSize: that.data.pageSize
-    }, function (res) {
-      res.data.data.cat.shift();
+    if (that.data.p != that.data.totalPages)  {
+      util.request('get', 'Api/Article/getList', {
+        cat_id: that.data.activeCategoryId,
+        p: ++that.data.p,
+        pageSize: that.data.pageSize
+      }, function (res) {
+        res.data.data.cat.shift();
+        if (concat) {
+          that.setData({
+            classification: res.data.data.cat,
+            articleList: that.data.articleList.concat(res.data.data.articles),
+            totalPages: res.data.data.totalPages
+          });
+        } else {
+          that.setData({
+            classification: res.data.data.cat,
+            articleList: res.data.data.articles,
+            totalPages: res.data.data.totalPages
+          });
+        }
+        }, false, false, showlayer);
+    } else {
       that.setData({
-        classification: res.data.data.cat,
-        articleList: res.data.data.articles
-      });
-      console.log(res);
-    });
+        loadingHidden: true
+      })
+    }
   },
   // 上拉加载数据
-  lower: function () {
-    this.getArticleList(true);
+  onReachBottom: function () {
+    this.getArticleList(true,false);
   }
-
 
 });

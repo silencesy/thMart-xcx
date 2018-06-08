@@ -1,0 +1,40 @@
+<view class='shop'>
+
+  <view class='shop-head'>
+    <view class='left'>
+      <view><image src='../../images/touxiang.png' class='shop-logo'></image></view>
+      <view class='shop-name'>Amor flora</view>
+    </view>
+    <view class='right'>
+      <navigator url='/pages/index/index' hover-class="none" class='iconfont icon-shanghu1 shopgohome'></navigator>
+      <view class='iconfont icon-shoucang'></view>
+      <navigator url='' hover-class="none" class='iconfont icon-sousuo'></navigator>
+    </view>
+  </view>
+
+  <view class='shop-nav {{isFixed?"fixed-nav":""}}'>
+    <navigator url='/pages/shop/shop' hover-class="none" class='theme_color'>Home</navigator>
+    <navigator url='/pages/all/all' hover-class="none">All</navigator>
+    <navigator url='' hover-class="none">New Arrivals</navigator>
+  </view>
+
+  <swiper class='shop-swiper {{isFixed?"margin-top":""}}' indicator-dots="{{swiperConfig.indicatorDots}}"
+  autoplay="{{swiperConfig.autoplay}}" interval="{{swiperConfig.interval}}" duration="{{swiperConfig.duration}}" circular="{{swiperConfig.circular}}" indicator-color="{{swiperConfig.indicatorColor}}" indicator-active-color="{{swiperConfig.indicatorActiveColor}}">
+    <block>
+      <swiper-item>
+        <image src="../../images/touxiang.png" mode="widthFix"/>
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view class='shop-content'>
+    <image src="../../images/touxiang.png" mode="widthFix"/>
+    <image src="../../images/touxiang.png" mode="widthFix"/>
+  </view>
+
+  <view class='bottom'>
+    <navigator url='/pages/index/index' hover-class="none" class='iconfont icon-shanghu1'><text>Home</text></navigator>
+    <navigator hover-class="none" class='iconfont icon-kefu'><text>Live Chat</text></navigator>
+  </view>
+
+</view>

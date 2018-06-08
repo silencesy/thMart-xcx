@@ -1,0 +1,56 @@
+/* pages/all/all.wxss */
+.title {
+  background-color: #fff;
+  display: flex;
+  text-align: center;
+  height: 80rpx;
+  line-height: 80rpx;
+  padding-bottom: 10rpx;
+  border-bottom: 1px solid #dfdfdf;
+}
+.title > navigator {
+  flex: 1;
+  color: #999;
+}
+.title > navigator:after {
+  content: '|';
+  float: right;
+  margin-top: -2rpx;
+  color: #999;
+}
+.title > navigator:last-child:after{
+  content: ' ';
+}
+.title .theme_color {
+  color: #f6442b;
+}
+
+.select-nav {
+  background-color: #fff;
+  display: flex;
+  text-align: center;
+  height: 90rpx;
+  line-height: 90rpx;
+}
+.select-nav > view {
+  flex: 1;
+  color: #999;
+}
+.select-nav > view:first-child:after{
+  content: '|';
+  float: right;
+  margin-top: -2rpx;
+  color: #999;
+}
+
+.jiantou {
+  position: relative;
+}
+.jiantou-up {
+  position: absolute;
+  top: -30rpx;
+}
+.jiantou-down {
+  position: absolute;
+  top: -13rpx;
+}

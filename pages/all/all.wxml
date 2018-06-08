@@ -1,0 +1,26 @@
+<view class='shop-nav'>
+  <view class='title'>
+    <navigator url='/pages/shop/shop' hover-class="none" class='theme_color'>Home</navigator>
+    <navigator url='' hover-class="none">All</navigator>
+    <navigator url='' hover-class="none">New Arrivals</navigator>
+  </view>
+  <view class='select-nav'>
+    <view>Sales</view>
+    <view>
+      <text>Price</text>
+      <text class='jiantou'>
+        <text class='jiantou-up iconfont icon-xiangshangjiantou-copy-copy-copy-copy'></text>
+        <text class='jiantou-down iconfont icon-xiangshangjiantou-copy-copy-copy'></text>
+      </text>
+    </view>
+  </view>
+
+
+
+
+
+
+
+
+
+</view>

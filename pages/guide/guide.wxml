@@ -9,10 +9,9 @@
     </view>
   </view>
   <view class='content'>
-     <scroll-view scroll-y scroll-top="{{scrollTop}}" enable-back-to-top="true" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll">
-        <article-item articleListData='{{articleList}}'>
-          
-        </article-item>
-     </scroll-view>
+     <article-item articleListData='{{articleList}}'></article-item>
+      <view hidden="{{loadingHidden ? true : false}}" class="loading">
+        <view class='icon-jiazai1 iconfont'></view>
+      </view>
   </view>   
 </view>

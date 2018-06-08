@@ -1,14 +1,16 @@
 {
   "pages":[
-    
     "pages/index/index",
-    "pages/categories/categories",
     "pages/guide/guide",
-    "pages/cart/cart",
+    
+    "pages/all/all",
+    "pages/shop/shop",
+    "pages/cart/cart",   
+    "pages/categories/categories",
+    "pages/userinfo/userinfo",
     "pages/center/center",
     "pages/order-list/order-list",
     "pages/product-list/product-list",
-    "pages/userinfo/userinfo",
     "pages/wishlist/wishlist",
     "pages/productdetail/productdetail",
     "pages/service/service",
