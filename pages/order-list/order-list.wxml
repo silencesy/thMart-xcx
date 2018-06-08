@@ -1,0 +1,34 @@
+<view class='order-container'>
+  <view class='title' bindtap='tab'>
+    <view class='{{showId==0?"actvie":""}}' id="0">All</view>
+    <view class='{{showId==1?"actvie":""}}' id="1">Unpaid</view>
+    <view class='{{showId==2?"actvie":""}}' id="2">Paid</view>
+    <view class='{{showId==3?"actvie":""}}' id="3">Shipped</view>
+  </view>
+  <view class='content'>
+    <swiper bindchange="bindchange" current="{{showId}}" duration="{{duration}}">
+      <swiper-item>
+          <scroll-view scroll-y>
+            <order-item line="line2" arrow="iconfont icon-fanhui">
+            <view slot="right" class='right'>123</view>
+            </order-item>
+          </scroll-view>
+      </swiper-item>
+      <swiper-item>
+          <scroll-view scroll-y>
+            <view>第二页</view>
+          </scroll-view>
+      </swiper-item>
+      <swiper-item>
+          <scroll-view scroll-y>
+            <view>第三页</view>
+          </scroll-view>
+      </swiper-item>
+      <swiper-item>
+          <scroll-view scroll-y>
+            <view>第四页</view>
+          </scroll-view>
+      </swiper-item>
+    </swiper>
+  </view>
+</view>

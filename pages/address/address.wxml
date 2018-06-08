@@ -1,0 +1,78 @@
+<view class='address-container'>
+  <view class='address-empty'>
+    
+  </view>
+  <view class='address-box'>
+    <view class='address-list'>
+      <view class='address-item'>
+        <view class='name'>sunyu</view>
+        <view class='phone'>18381302570</view>
+        <view class='cn-address'>123</view>
+        <view class='en-address'>123</view>
+        <view class='edit'>
+          <view class='left'>
+            <view class='iconfont icon-duihao'></view><view>Default</view>
+          </view>
+          <view class='right'>
+            <view class='edit-btn'>
+              <view class='iconfont icon-bianji'></view>
+              <view>Edit</view>
+            </view>
+            <view class='delete-btn'>
+              <view class='iconfont icon-shanchu'>
+              </view>
+              <view>Delete</view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class='address-item'>
+        <view class='name'>sunyu</view>
+        <view class='phone'>18381302570</view>
+        <view class='cn-address'>123</view>
+        <view class='en-address'>123</view>
+        <view class='edit'>
+          <view class='left'>
+            <view class='iconfont icon-duihao'></view><view>Default</view>
+          </view>
+          <view class='right'>
+            <view class='edit-btn'>
+              <view class='iconfont icon-bianji'></view>
+              <view>Edit</view>
+            </view>
+            <view class='delete-btn'>
+              <view class='iconfont icon-shanchu'>
+              </view>
+              <view>Delete</view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class='address-item'>
+        <view class='name'>sunyu</view>
+        <view class='phone'>18381302570</view>
+        <view class='cn-address'>123</view>
+        <view class='en-address'>123</view>
+        <view class='edit'>
+          <view class='left'>
+            <view class='iconfont icon-duihao'></view><view>Default</view>
+          </view>
+          <view class='right'>
+            <view class='edit-btn'>
+              <view class='iconfont icon-bianji'></view>
+              <view>Edit</view>
+            </view>
+            <view class='delete-btn'>
+              <view class='iconfont icon-shanchu'>
+              </view>
+              <view>Delete</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <navigator url="/pages/add-address/add-address" class='add-address' hover-class="none">
+      +Add New Shipping Address
+    </navigator>
+  </view>
+</view> 

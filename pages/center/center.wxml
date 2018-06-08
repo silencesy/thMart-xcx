@@ -8,7 +8,7 @@
   <navigator class='right' url="/pages/userinfo/userinfo" hover-class="none">Edit</navigator> 
 </view>
 <view class='center-state'>
-  <navigator url='' class='state-title' hover-class="none">
+  <navigator url='/pages/order-list/order-list?id=0' class='state-title' hover-class="none">
     <view class='state-order'>Orders</view>
     <view class='state-all'>
         <view>All</view>
@@ -16,15 +16,15 @@
     </view>
   </navigator>
   <view class='state-content'>
-    <navigator url='' hover-class="none">
+    <navigator url='/pages/order-list/order-list?id=1' hover-class="none">
       <view class='iconfont icon-daifukuan'></view>
       <view>Unpaid</view>
     </navigator>
-    <navigator url='' hover-class="none">
+    <navigator url='/pages/order-list/order-list?id=2' hover-class="none">
       <view class='iconfont icon-fahuo'></view>
       <view>Paid</view>
     </navigator>
-    <navigator url='' hover-class="none">
+    <navigator url='/pages/order-list/order-list?id=3' hover-class="none">
       <view class='iconfont icon-daishouhuo'></view>
       <view>Shipped</view>
     </navigator>
@@ -32,11 +32,11 @@
 </view>
 <view class='center-bottom'>
   <view class='bottom-content bottom-one'>
-    <navigator url='' hover-class="none">
+    <navigator url='/pages/address/address' hover-class="none">
       <view class='iconfont icon-shouhuodizhi'></view>
       <view>Address Book</view>
     </navigator>
-    <navigator url='' hover-class="none">
+    <navigator url='/pages/wishlist/wishlist' hover-class="none">
       <view class='iconfont icon-shoucang'></view>
       <view>Wishlist</view>
     </navigator>

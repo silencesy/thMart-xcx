@@ -1,18 +1,18 @@
 <view class='cart-container'>
-  <view class='cart-empty' hidden='true'>
+  <view class='cart-empty' hidden='{{move}}'>
     <view class='iconfont icon-gouwuche'></view>
     <view class='prompt'>Your cart is currently empty</view>
     <view>
       <view class='shopping-btn' bindtap='goIndex'>Start Shopping</view>
     </view>
   </view>
-  <view class='cart-list'>
+  <view class='cart-list' hidden='{{!move}}'>
     <view class='shop-item'>
       <view class='title'>
         <view class='iconfont icon-duihao'></view><view class='shop-name'>name</view><view class='iconfont icon-fanhui'></view>
       </view>
       <view class='product-item' wx:for="{{list}}" wx:key="index">
-        <view class="content {{item.move?'slide-distance':''}}" bindtap="selectTap" bindtouchstart="touchS" bindtouchmove="touchM" bindtouchend="touchE" data-index="{{index}}">
+        <view class="content {{item.move?'slide-distance':''}}" bindtouchstart="touchS" bindtouchmove="touchM" bindtouchend="touchE" data-index="{{index}}">
           <view class='iconfont icon-duihao'></view>
           <view class='image-box'>
             <image src="{{item.goods_picture}}" mode='widthFix'></image>
@@ -32,6 +32,6 @@
       </view>
 
     </view>
-
+    
   </view>
 </view>

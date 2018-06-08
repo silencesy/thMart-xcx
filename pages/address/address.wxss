@@ -1,0 +1,38 @@
+.address-item {
+  margin-bottom: 24rpx;
+  background-color: #fff;
+  padding: 24rpx;
+}
+.edit {
+  display: flex;
+  line-height: 70rpx;
+}
+.edit > view {
+  flex: 1;
+}
+.left {
+  display: flex;
+}
+.iconfont {
+  margin-right: 20rpx;
+  
+}
+.right {
+  display: flex;
+}
+.right > view {
+  flex: 1;
+  text-align: center;
+  display: flex;
+}
+.add-address {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  background-color: #f24827;
+  color: #fff;
+  text-align: center;
+}

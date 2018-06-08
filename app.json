@@ -1,14 +1,19 @@
 {
   "pages":[
-    "pages/index/index",
-    "pages/cart/cart",
     
+    "pages/index/index",
     "pages/categories/categories",
-    "pages/userinfo/userinfo",
     "pages/guide/guide",
+    "pages/cart/cart",
     "pages/center/center",
+    "pages/order-list/order-list",
+    "pages/product-list/product-list",
+    "pages/userinfo/userinfo",
+    "pages/wishlist/wishlist",
     "pages/productdetail/productdetail",
-    "pages/service/service"
+    "pages/service/service",
+    "pages/address/address",
+    "pages/add-address/add-address"
   ],
   "window":{
     "backgroundTextStyle":"dark",

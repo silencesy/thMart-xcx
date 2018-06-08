@@ -1,0 +1,92 @@
+page {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding-top: 82rpx;
+}
+.actvie {
+  color: #f6442b;
+  border-bottom: 1px solid #f6442b;
+}
+.wishlist-container .title {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  height: 80rpx;
+  line-height: 80rpx;
+  display: flex;
+  border-bottom: 1px solid #ddd;
+}
+.wishlist-container .title > view {
+  flex: 1;
+  text-align: center;
+}
+.wishlist-container,.content,swiper,swiper-item,scroll-view {
+  width: 100%;
+  height: 100%;
+}
+.goods-box .item {
+  display: flex;
+  padding: 24rpx;
+  background-color: #fff;
+   margin-bottom: 24rpx; 
+}
+.goods-box .item:last-child {
+  margin-bottom: 0;
+}
+.goods-box .item > view:nth-child(1) {
+  flex: 1;
+}
+.goods-box .item > view:nth-child(1) image {
+  width: 100%;
+}
+.goods-box .item > view:nth-child(2) {
+  flex: 3;
+}
+.goods-box .right {
+  padding-left: 24rpx;
+  position: relative;
+}
+.goods-box .price-delete {
+  display: flex;
+  position: absolute;
+  left: 24rpx;
+  bottom: 10rpx;
+  width: 100%;
+}
+.goods-box .price-delete > view {
+  flex: 1;
+}
+.goods-box .price-delete > view:nth-child(2) {
+  text-align: right;
+  margin-right: 24rpx;
+}
+.shop-box .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20rpx;
+  background-color: #fff;
+  margin-bottom: 24rpx;
+}
+.shop-box .item:last-child {
+  margin-bottom: 0;
+}
+.shop-box .item > view:nth-child(1) {
+  flex: 1.07;
+}
+.shop-box .item > view:nth-child(1) image {
+  width: 100%;
+}
+.shop-box .item > view:nth-child(2) {
+  flex: 1.6;
+  text-align: center;
+}
+.shop-box .item > view:nth-child(3) {
+  flex: 1.6;
+}
+.shop-box .delete {
+  text-align: right;
+}

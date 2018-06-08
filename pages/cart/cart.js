@@ -3,7 +3,7 @@ const util = require('../../utils/util.js')
 
 Page({
   data: {
-    move: false,
+    move: true,
     list: []
   },
   onLoad: function () {
@@ -63,6 +63,20 @@ Page({
         }
       ]
     })
+    console.log(this.data.list.length);
+    if(this.data.list.length <= 0) {
+      this.setData({
+        move: false
+      })
+    }
+  },
+  onHide: function () {
+    this.data.list.forEach(function (value) {
+      value.move = false;
+    });
+    this.setData({
+      list: this.data.list
+    });
   },
   goIndex: function () {
     wx.switchTab({
@@ -83,7 +97,10 @@ Page({
       var disX = this.data.startX - moveX;
       var delBtnWidth = this.data.delBtnWidth;
       if (disX == 0 || disX < 0) {
-        this.data.list[index].move =false;
+        this.data.list.forEach(function (value) {
+          value.move = false;
+        });
+        // this.data.list[index].move =false;
         this.setData({
           list: this.data.list
         })

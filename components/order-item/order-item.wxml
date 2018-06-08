@@ -1,0 +1,116 @@
+<order-component>
+  <view class='order-item'>
+    <view class='title'>
+      <view class='name'>sunyu</view>
+      <view class='arrow'></view>
+      <slot name="right"></slot>
+    </view>
+    <view class='content'>
+      <view class='img-box'>
+        <image src='http://api.mall.thatsmags.com/Public/ckfinder/images/toys/NERF/A0713/A0713SA20 3.jpg' mode='widthFix'></image>
+      </view>
+      <view class='info'>
+        <view class='line'>NERF N-STRIKE ELITE RETALITOR BLASTER</view>
+        <view class='type'>color: red</view>
+      </view>
+      <view class='price-count'>
+        <view>￥192</view>
+        <view>￥122</view>
+        <view>x 12</view>
+      </view>
+    </view>
+    <view class='content'>
+      <view class='img-box'>
+        <image src='http://api.mall.thatsmags.com/Public/ckfinder/images/toys/NERF/A0713/A0713SA20 3.jpg' mode='widthFix'></image>
+      </view>
+      <view class='info'>
+        <view class='line'>NERF N-STRIKE ELITE RETALITOR BLASTER</view>
+        <view class='type'>color: red</view>
+      </view>
+      <view class='price-count'>
+        <view>￥192</view>
+        <view>￥122</view>
+        <view>x 12</view>
+      </view>
+    </view>
+    <view class='bottom'>
+      <slot name='bottom'></slot>
+    </view>
+  </view>
+  <view class='order-item'>
+    <view class='title'>
+      <view class='name'>sunyu</view>
+      <view class='arrow'></view>
+      <slot name="right"></slot>
+    </view>
+    <view class='content'>
+      <view class='img-box'>
+        <image src='http://api.mall.thatsmags.com/Public/ckfinder/images/toys/NERF/A0713/A0713SA20 3.jpg' mode='widthFix'></image>
+      </view>
+      <view class='info'>
+        <view class='line'>NERF N-STRIKE ELITE RETALITOR BLASTER</view>
+        <view class='type'>color: red</view>
+      </view>
+      <view class='price-count'>
+        <view>￥192</view>
+        <view>￥122</view>
+        <view>x 12</view>
+      </view>
+    </view>
+    <view class='content'>
+      <view class='img-box'>
+        <image src='http://api.mall.thatsmags.com/Public/ckfinder/images/toys/NERF/A0713/A0713SA20 3.jpg' mode='widthFix'></image>
+      </view>
+      <view class='info'>
+        <view class='line'>NERF N-STRIKE ELITE RETALITOR BLASTER</view>
+        <view class='type'>color: red</view>
+      </view>
+      <view class='price-count'>
+        <view>￥192</view>
+        <view>￥122</view>
+        <view>x 12</view>
+      </view>
+    </view>
+    <view class='bottom'>
+      <slot name='bottom'></slot>
+    </view>
+  </view>
+  <view class='order-item'>
+    <view class='title'>
+      <view class='name'>sunyu</view>
+      <view class='arrow'></view>
+      <slot name="right"></slot>
+    </view>
+    <view class='content'>
+      <view class='img-box'>
+        <image src='http://api.mall.thatsmags.com/Public/ckfinder/images/toys/NERF/A0713/A0713SA20 3.jpg' mode='widthFix'></image>
+      </view>
+      <view class='info'>
+        <view class='line'>NERF N-STRIKE ELITE RETALITOR BLASTER</view>
+        <view class='type'>color: red</view>
+      </view>
+      <view class='price-count'>
+        <view>￥192</view>
+        <view>￥122</view>
+        <view>x 12</view>
+      </view>
+    </view>
+    <view class='content'>
+      <view class='img-box'>
+        <image src='http://api.mall.thatsmags.com/Public/ckfinder/images/toys/NERF/A0713/A0713SA20 3.jpg' mode='widthFix'></image>
+      </view>
+      <view class='info'>
+        <view class='line'>NERF N-STRIKE ELITE RETALITOR BLASTER</view>
+        <view class='type'>color: red</view>
+      </view>
+      <view class='price-count'>
+        <view>￥192</view>
+        <view>￥122</view>
+        <view>x 12</view>
+      </view>
+    </view>
+    <view class='bottom'>
+      <slot name='bottom'></slot>
+    </view>
+  </view>
+</order-component>

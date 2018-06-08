@@ -9,7 +9,7 @@
     </block>
   </swiper>
   <view class='section'>
-      <image class='section-banner' lazy-load="true" src='{{homeData.deal.image}}'></image>
+      <image bindtap='toProductList' class='section-banner' lazy-load="true" src='{{homeData.deal.image}}'></image>
       <view class='product-container'>
           <scroll-view class='product-scroll' scroll-x="true">
             <block wx:for="{{homeData.deal.list}}" wx:key="*this">
@@ -26,7 +26,7 @@
       </view>
   </view>
   <view class='section'>
-      <image class='section-banner' lazy-load="true" src='{{homeData.ticketing.image}}'></image>
+      <image bindtap='toProductList' class='section-banner' lazy-load="true" src='{{homeData.ticketing.image}}'></image>
       <view class='product-container'>
           <scroll-view class='product-scroll' scroll-x="true">
             <block wx:for="{{homeData.ticketing.list}}" wx:key="*this">
@@ -44,10 +44,10 @@
   </view>
 
   <article-item articleListData='{{homeData.article.list}}'>
-    <image src='{{homeData.article.image}}'></image>
+    <image bindtap='toProductList' src='{{homeData.article.image}}'></image>
   </article-item>
   <view class='section'>
-      <image class='section-banner' lazy-load="true" src='{{homeData.feature_products.image}}'></image>
+      <image bindtap='toProductList' class='section-banner' lazy-load="true" src='{{homeData.feature_products.image}}'></image>
       <view class='product-container'>
           <scroll-view class='product-scroll' scroll-x="true">
             <block wx:for="{{homeData.feature_products.list}}" wx:key="*this">
@@ -64,7 +64,7 @@
       </view>
   </view>
   <view class='section shop'>
-      <image class='section-banner' lazy-load="true" src='{{homeData.feature_shop.image}}'></image>
+      <image bindtap='toProductList' class='section-banner' lazy-load="true" src='{{homeData.feature_shop.image}}'></image>
       <view class='product-container'>
           <scroll-view class='product-scroll' scroll-x="true">
             <block wx:for="{{homeData.feature_shop.list}}" wx:key="*this">

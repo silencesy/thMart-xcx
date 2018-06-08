@@ -1,0 +1,146 @@
+<view class='wishlist-container'>
+  <view class='title' bindtap='tab'>
+    <view class='{{showId==0?"actvie":""}}' id="0">Goods</view>
+    <view class='{{showId==1?"actvie":""}}' id="1">Shops</view>
+  </view>
+  <view class='content'>
+    <swiper bindchange="bindchange" current="{{showId}}" duration="{{duration}}">
+      <swiper-item class="goods-box">
+          <scroll-view scroll-y>
+            <view class='item'>
+              <view class='img-box'>
+                <image mode='widthFix' src='http://api.mall.thatsmags.com/Public/ckfinder/images/PRD Ticking/…’øæ_meitu_1.jpg'></image>
+              </view>
+              <view class='right'>
+                <view class='line2'>Poolside BBQ Party by Shangri-La&That's PRD</view>
+                <view class='price-delete'>
+                  <view class='price theme_color'>￥123</view>
+                  <view class='iconfont icon-shanchu theme_color'></view>
+                </view>
+              </view>
+            </view>
+            <view class='item'>
+              <view class='img-box'>
+                <image mode='widthFix' src='http://api.mall.thatsmags.com/Public/ckfinder/images/PRD Ticking/…’øæ_meitu_1.jpg'></image>
+              </view>
+              <view class='right'>
+                <view class='line2'>Poolside BBQ Party by Shangri-La&That's PRD</view>
+                <view class='price-delete'>
+                  <view class='price theme_color'>￥123</view>
+                  <view class='iconfont icon-shanchu theme_color'></view>
+                </view>
+              </view>
+            </view>
+            <view class='item'>
+              <view class='img-box'>
+                <image mode='widthFix' src='http://api.mall.thatsmags.com/Public/ckfinder/images/PRD Ticking/…’øæ_meitu_1.jpg'></image>
+              </view>
+              <view class='right'>
+                <view class='line2'>Poolside BBQ Party by Shangri-La&That's PRD</view>
+                <view class='price-delete'>
+                  <view class='price theme_color'>￥123</view>
+                  <view class='iconfont icon-shanchu theme_color'></view>
+                </view>
+              </view>
+            </view>
+            <view class='item'>
+              <view class='img-box'>
+                <image mode='widthFix' src='http://api.mall.thatsmags.com/Public/ckfinder/images/PRD Ticking/…’øæ_meitu_1.jpg'></image>
+              </view>
+              <view class='right'>
+                <view class='line2'>Poolside BBQ Party by Shangri-La&That's PRD</view>
+                <view class='price-delete'>
+                  <view class='price theme_color'>￥123</view>
+                  <view class='iconfont icon-shanchu theme_color'></view>
+                </view>
+              </view>
+            </view>
+            <view class='item'>
+              <view class='img-box'>
+                <image mode='widthFix' src='http://api.mall.thatsmags.com/Public/ckfinder/images/PRD Ticking/…’øæ_meitu_1.jpg'></image>
+              </view>
+              <view class='right'>
+                <view class='line2'>Poolside BBQ Party by Shangri-La&That's PRD</view>
+                <view class='price-delete'>
+                  <view class='price theme_color'>￥123</view>
+                  <view class='iconfont icon-shanchu theme_color'></view>
+                </view>
+              </view>
+            </view>
+            <view class='item'>
+              <view class='img-box'>
+                <image mode='widthFix' src='http://api.mall.thatsmags.com/Public/ckfinder/images/PRD Ticking/…’øæ_meitu_1.jpg'></image>
+              </view>
+              <view class='right'>
+                <view class='line2'>Poolside BBQ Party by Shangri-La&That's PRD</view>
+                <view class='price-delete'>
+                  <view class='price theme_color'>￥123</view>
+                  <view class='iconfont icon-shanchu theme_color'></view>
+                </view>
+              </view>
+            </view>
+            
+          </scroll-view>
+      </swiper-item>
+      <swiper-item class="shop-box">
+          <scroll-view scroll-y>
+            <view class='item'>
+              <view class='img-box'>
+                <image mode='widthFix' src='http://api.mall.thatsmags.com/Public/ckfinder/images/鲜花/amor.jpg'></image>
+              </view>
+              <view class='name'>
+                Amor flora
+              </view>
+              <view class='delete'>
+                <view class='iconfont icon-shanchu theme_color'></view>
+              </view>
+            </view>
+            <view class='item'>
+              <view class='img-box'>
+                <image mode='widthFix' src='http://api.mall.thatsmags.com/Public/ckfinder/images/鲜花/amor.jpg'></image>
+              </view>
+              <view class='name'>
+                Amor flora
+              </view>
+              <view class='delete'>
+                <view class='iconfont icon-shanchu theme_color'></view>
+              </view>
+            </view>
+            <view class='item'>
+              <view class='img-box'>
+                <image mode='widthFix' src='http://api.mall.thatsmags.com/Public/ckfinder/images/鲜花/amor.jpg'></image>
+              </view>
+              <view class='name'>
+                Amor flora
+              </view>
+              <view class='delete'>
+                <view class='iconfont icon-shanchu theme_color'></view>
+              </view>
+            </view>
+            <view class='item'>
+              <view class='img-box'>
+                <image mode='widthFix' src='http://api.mall.thatsmags.com/Public/ckfinder/images/鲜花/amor.jpg'></image>
+              </view>
+              <view class='name'>
+                Amor flora
+              </view>
+              <view class='delete'>
+                <view class='iconfont icon-shanchu theme_color'></view>
+              </view>
+            </view>
+            <view class='item'>
+              <view class='img-box'>
+                <image mode='widthFix' src='http://api.mall.thatsmags.com/Public/ckfinder/images/鲜花/amor.jpg'></image>
+              </view>
+              <view class='name'>
+                Amor flora
+              </view>
+              <view class='delete'>
+                <view class='iconfont icon-shanchu theme_color'></view>
+              </view>
+            </view>
+          </scroll-view>
+      </swiper-item>
+    </swiper>
+  </view>
+</view>

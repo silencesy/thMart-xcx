@@ -1,0 +1,9 @@
+<view class='product-list-contianer'>
+  <view class='nav'>
+    <view class='sales'>Sales</view>
+    <view>Price</view>
+  </view>
+  <view class='content'>
+    <product-item productListData="{{productList}}"></product-item>
+  </view>
+</view>

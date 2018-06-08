@@ -1,0 +1,18 @@
+<view class='add-address-container'>
+  <view class='content'>
+    <view class='name'><text class='theme_color'>*</text> <input placeholder="Name" /></view>
+    <view class='phone'><text class='theme_color'>*</text> <input placeholder="Phone" /></view>
+    <view class='cn-address'>
+      <textarea placeholder="* Please write down your detailed address in Chinese (city name is required)" />
+    </view>
+    <view class='en-address'>
+      <textarea placeholder="Please write down your detailed address in English (city name is required)" />
+    </view>
+  </view>
+  <view class='set-Default-btn'>
+    <view class='iconfont icon-duihao'></view>Set as Default
+  </view>
+  <view class='save'>
+    Submit
+  </view>
+</view>

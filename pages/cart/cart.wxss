@@ -48,6 +48,7 @@
 .shop-item .product-item {
   width: 100%;
   overflow:hidden;
+  height: 218rpx;
 }
 
 .shop-item .content {

@@ -46,7 +46,7 @@ Page({
   },
   onReachBottom: function () {
     var that = this;
-    if (that.data.hotDataPara.p != that.data.hotDataPara.totalPages){
+    if (that.data.hotDataPara.p != that.data.hotDataPara.totalPages && that.data.hotDataPara.totalPages!=0){
       that.data.hotDataPara.p++;
       util.request("get", "Api/Set/getList", that.data.hotDataPara, function (res) {
         res.data.data.goods.length = parseInt(res.data.data.goods.length / 3)*3;
@@ -54,8 +54,7 @@ Page({
           hotData: that.data.hotData.concat(res.data.data.goods),
         });
       },false,false,false);
-    }
-    if (that.data.hotDataPara.p+1 == that.data.hotDataPara.totalPages) {
+    } else {
       that.setData({
         loadingHidden: true
       });
@@ -64,6 +63,11 @@ Page({
   toDetailsTap: function(e) {
     wx.navigateTo({
       url: "../../pages/productdetail/productdetail?id=" + e.currentTarget.dataset.id
+    })
+  },
+  toProductList: function (e) {
+    wx.navigateTo({
+      url: "../../pages/product-list/product-list"
     })
   }
 })
