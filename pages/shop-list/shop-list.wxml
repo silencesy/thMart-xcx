@@ -1,0 +1,22 @@
+<view class='shop-list'>
+  <view>
+    <view><image src='../../images/touxiang.png' mode='widthFix'></image></view>
+    <view class='name'>Name1</view>
+  </view>  
+  <view>
+    <view><image src='../../images/touxiang.png' mode='widthFix'></image></view>
+    <view class='name'>Name2</view>
+  </view> <view>
+    <view><image src='../../images/touxiang.png' mode='widthFix'></image></view>
+    <view class='name'>Name3</view>
+  </view> 
+  <view>
+    <view><image src='../../images/touxiang.png' mode='widthFix'></image></view>
+    <view class='name'>Name4</view>
+  </view> 
+  <view>
+    <view><image src='../../images/touxiang.png' mode='widthFix'></image></view>
+    <view class='name'>Name5</view>
+  </view> 
+
+</view>

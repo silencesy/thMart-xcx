@@ -1,0 +1,32 @@
+.title {
+  background-color: #fff;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+}
+.price {
+  width: 100%;
+  text-align: center;
+  height: 160rpx;
+  line-height: 160rpx;
+  font-size: 36rpx;
+}
+.price text {
+  color: #fb4216;
+}
+.wepay {
+  width: 100%;
+  text-align: center;
+  height: 160rpx;
+  /* line-height: 234rpx; */
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wepay image {
+  width: 210rpx;
+  height: 80rpx;
+  padding: 5rpx 35rpx;
+  border: 1px solid #dfdfdf;
+}

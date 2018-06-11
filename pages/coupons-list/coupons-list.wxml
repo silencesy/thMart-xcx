@@ -1,0 +1,12 @@
+<view class='coupons'>
+  <view>
+    <image src='../../images/toy.png' mode='widthFix'></image>
+  </view>
+  <view>
+    <image src='../../images/toy.png' mode='widthFix'></image>
+  </view>
+  <view>
+    <image src='../../images/toy.png' mode='widthFix'></image>
+  </view>
+
+</view>

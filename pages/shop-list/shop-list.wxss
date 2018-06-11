@@ -1,0 +1,22 @@
+.shop-list {
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 24rpx;
+  justify-content: space-between; 
+}
+.shop-list:after {
+  content: '';
+  width: 220rpx;      
+}
+.shop-list > view {
+  width: 220rpx;
+  margin-bottom: 24rpx;
+}
+.shop-list image {
+  width: 100%;
+}
+.name {
+  text-align: center;
+}

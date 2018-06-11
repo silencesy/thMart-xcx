@@ -1,4 +1,4 @@
-//coupons-list.js
+//shop-list.js
 const util = require('../../utils/util.js')
 
 Page({

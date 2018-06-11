@@ -1,0 +1,12 @@
+.coupons {
+  width: 100%;
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+.coupons > view {
+  width: 100%;
+  margin-bottom: 20rpx;
+}
+.coupons > view image {
+  width: 100%;
+}

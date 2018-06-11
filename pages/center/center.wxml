@@ -42,7 +42,7 @@
     </navigator>
   </view>
   <view class='bottom-content'>
-    <navigator url='' hover-class="none">
+    <navigator url='/pages/coupons-list/coupons-list' hover-class="none">
       <view class='iconfont icon-youhuiquan'></view>
       <view>thMart-Coupons</view>
     </navigator>

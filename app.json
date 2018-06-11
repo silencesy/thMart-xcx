@@ -1,8 +1,11 @@
 {
   "pages":[
+    "pages/pay/pay",
+    "pages/pay-result/pay-result",
     "pages/index/index",
-    "pages/guide/guide",
-    
+    "pages/coupons-list/coupons-list",
+    "pages/shop-list/shop-list",
+    "pages/guide/guide",   
     "pages/all/all",
     "pages/shop/shop",
     "pages/cart/cart",   

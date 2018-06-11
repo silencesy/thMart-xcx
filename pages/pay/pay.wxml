@@ -1,0 +1,12 @@
+<view class='pay'>
+  <view class='title'>
+    <view>Details</view>
+  </view>
+  <view class='price'>Amount: <text>￥328</text></view>
+  <view class='wepay'>
+    <image src='../../images/WeChatPay.svg'></image>
+  </view>
+
+
+
+</view>
